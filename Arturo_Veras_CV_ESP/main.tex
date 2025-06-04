@@ -4,25 +4,15 @@
 \moderncvcolor{blue}
 \moderncvstyle{banking}
 
-% character encoding
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{graphicx}
-\usepackage{tikz}
+% Common packages and settings
+\input{../common/packages.tex}
 
-%Ajuste de margenes de pagina
-\usepackage[scale=0.8]{geometry}
+% Common personal information
+\input{../common/personal_info.tex}
 
-\AtBeginDocument{\recomputelengths}
-
-%Datos personales
-\firstname{Arturo}
-\familyname{Veras Olivos}
+% Language-specific personal information
 \title{Currículum Vit\ae}
-\address{Santiago}{La Florida}
-\mobile{ +56 9 82413883}
-\email{a.veras@gmail.com}
+\address{Santiago}{La Florida} % Dirección específica para ESP
 
 \begin{document}
 \maketitle
