@@ -1,0 +1,15 @@
+% Archivo de configuración para paquetes compartidos
+% Este archivo define las rutas a los paquetes LaTeX compartidos
+
+% Añadir las rutas de los paquetes compartidos al TEXINPUTS
+\makeatletter
+\edef\input@path{%
+  {\@currdir../shared/moderncv/}%
+  {\@currdir../shared/moderntimeline/}%
+  {\@currdir../shared/pdfpages/}%
+  {\@currdir../shared/xpatch/}%
+  {\@currdir../shared/biblatex_modifications/}%
+  {\@currdir../shared/cvitem_modifications/}%
+  \input@path%
+}
+\makeatother

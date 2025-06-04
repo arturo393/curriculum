@@ -1,18 +1,35 @@
 % Example CV
 
+% Usar paquetes compartidos
+\makeatletter
+\edef\input@path{%
+  {\@currdir../shared/moderncv/}%
+  {\@currdir../shared/moderntimeline/}%
+  {\@currdir../shared/pdfpages/}%
+  {\@currdir../shared/xpatch/}%
+  {\@currdir../shared/biblatex_modifications/}%
+  {\@currdir../shared/cvitem_modifications/}%
+  \input@path%
+}
+\makeatother
+
 \documentclass[11pt, a4paper]{moderncv}
 \moderncvcolor{blue}
 \moderncvstyle{banking}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[scale=0.8]{geometry}
+\AtBeginDocument{\recomputelengths}
 
-% Common packages and settings
-\input{../common/packages.tex}
-
-% Common personal information
-\input{../common/personal_info.tex}
-
-% Language-specific personal information
-\title{Curriculum Vitae} % English title
-\address{}{} % Address can be kept empty or specific for ENG if needed
+\firstname{Arturo}
+\familyname{Veras Olivos}
+\title{Curriculum Vitae}
+\address{}{}
+\mobile{+56 9 82413883}
+\email{a.veras@gmail.com}
 
 \begin{document}
 \maketitle

@@ -1,18 +1,41 @@
 % Curriculum de Ejemplo
 
+% Usar paquetes compartidos
+\makeatletter
+\edef\input@path{%
+  {\@currdir../shared/moderncv/}%
+  {\@currdir../shared/moderntimeline/}%
+  {\@currdir../shared/pdfpages/}%
+  {\@currdir../shared/xpatch/}%
+  {\@currdir../shared/biblatex_modifications/}%
+  {\@currdir../shared/cvitem_modifications/}%
+  \input@path%
+}
+\makeatother
+
 \documentclass[11pt, a4paper]{moderncv}
 \moderncvcolor{blue}
 \moderncvstyle{banking}
 
-% Common packages and settings
-\input{../common/packages.tex}
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{tikz}
 
-% Common personal information
-\input{../common/personal_info.tex}
+%Ajuste de margenes de pagina
+\usepackage[scale=0.8]{geometry}
 
-% Language-specific personal information
+\AtBeginDocument{\recomputelengths}
+
+%Datos personales
+\firstname{Arturo}
+\familyname{Veras Olivos}
 \title{Currículum Vit\ae}
-\address{Santiago}{La Florida} % Dirección específica para ESP
+\address{Santiago}{La Florida}
+\mobile{ +56 9 82413883}
+\email{a.veras@gmail.com}
 
 \begin{document}
 \maketitle
