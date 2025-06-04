@@ -1,0 +1,161 @@
+% =============================================================================
+% Template de Carta de Presentación - Sistema CV Inteligente
+% Personalizable automáticamente según empresa y posición
+% =============================================================================
+
+\documentclass[11pt,letterpaper]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Configuración de página
+\geometry{
+    left=2.5cm,
+    right=2.5cm,
+    top=2cm,
+    bottom=2cm
+}
+
+% Colores
+\definecolor{primarycolor}{RGB}{0,102,204}
+\definecolor{secondarycolor}{RGB}{64,64,64}
+
+% Configuración de hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primarycolor,
+    urlcolor=primarycolor,
+    citecolor=primarycolor
+}
+
+% Variables personalizables (se llenan automáticamente)
+\newcommand{\TARGETCOMPANY}{[COMPANY]}
+\newcommand{\TARGETPOSITION}{[POSITION]}
+\newcommand{\HIRINGMANAGER}{[HIRING_MANAGER]}
+\newcommand{\COMPANYVALUES}{[COMPANY_VALUES]}
+\newcommand{\COVERLETTERTEMPLATE}{[TEMPLATE]}
+
+% Información personal
+\newcommand{\MYNAME}{Arturo Veras Aguirre}
+\newcommand{\MYTITLE}{Ingeniero Civil Electrónico}
+\newcommand{\MYEMAIL}{arturo.veras@email.com}
+\newcommand{\MYPHONE}{+56 9 1234 5678}
+\newcommand{\MYLINKEDIN}{linkedin.com/in/arturo-veras}
+\newcommand{\MYGITHUB}{github.com/arturo-veras}
+
+% Configuración de la carta
+\signature{\MYNAME \\ \MYTITLE}
+\address{
+    \MYNAME \\
+    \MYTITLE \\
+    Email: \href{mailto:\MYEMAIL}{\MYEMAIL} \\
+    Teléfono: \MYPHONE \\
+    LinkedIn: \href{https://\MYLINKEDIN}{\MYLINKEDIN} \\
+    GitHub: \href{https://\MYGITHUB}{\MYGITHUB}
+}
+
+\begin{document}
+
+% Fecha automática
+\date{\today}
+
+% Destinatario (personalizable)
+\begin{letter}{
+    Equipo de Reclutamiento \\
+    \TARGETCOMPANY \\
+    \HIRINGMANAGER
+}
+
+% Asunto de la carta
+\opening{Estimado/a responsable de selección,}
+
+% =============================================================================
+% PÁRRAFO DE INTRODUCCIÓN
+% =============================================================================
+
+Me dirijo a ustedes para expresar mi interés en la posición de \textbf{\TARGETPOSITION} en \textbf{\TARGETCOMPANY}. Como Ingeniero Civil Electrónico con más de 9 años de experiencia desarrollando soluciones tecnológicas end-to-end, estoy entusiasmado por la oportunidad de contribuir al crecimiento e innovación de su equipo.
+
+% =============================================================================
+% PÁRRAFO DE VALOR DIFERENCIAL (personalizado por template)
+% =============================================================================
+
+% Contenido específico según template de CV usado
+\ifthenelse{\equal{\COVERLETTERTEMPLATE}{software}}{
+    % Para desarrollador de software
+    Mi experiencia incluye el desarrollo de arquitecturas escalables que procesan más de 500,000 transacciones diarias, implementación de sistemas full-stack (Python, React, MongoDB) y liderazgo de equipos técnicos en proyectos de alta complejidad. He trabajado con tecnologías cloud-native y metodologías ágiles, sempre enfocado en entregar soluciones robustas y mantenibles.
+    
+    Lo que me motiva especialmente de \TARGETCOMPANY\ es su enfoque en \COMPANYVALUES\ y cómo esto se alinea con mi pasión por crear tecnología que genere impacto real. Mi experiencia desarrollando plataformas IoT para minería me ha enseñado la importancia de construir sistemas confiables que operen en condiciones críticas, habilidades directamente transferibles a sus desafíos tecnológicos.
+}{
+\ifthenelse{\equal{\COVERLETTERTEMPLATE}{firmware}}{
+    % Para desarrollador firmware
+    Mi especialización en sistemas embebidos me ha permitido desarrollar firmware crítico que opera 24/7 en entornos industriales extremos, con 99.9\% de uptime. Tengo experiencia profunda en microcontroladores STM32, protocolos de comunicación industrial (LoRa, Modbus, CAN) y optimización de sistemas de tiempo real.
+    
+    La reputación de \TARGETCOMPANY\ en innovación tecnológica y su compromiso con \COMPANYVALUES\ resuena fuertemente conmigo. Mi track record desarrollando sistemas safety-critical para minería me ha dado una perspectiva única sobre la importancia de la confiabilidad y eficiencia energética, aspectos cruciales en sus productos.
+}{
+\ifthenelse{\equal{\COVERLETTERTEMPLATE}{iot}}{
+    % Para especialista IoT
+    Mi experiencia diseñando ecosistemas IoT completos me ha permitido conectar más de 200 dispositivos industriales, procesar 500,000+ mediciones diarias y crear dashboards que reducen tiempo de diagnóstico en 75\%. He trabajado con tecnologías edge computing, plataformas cloud (AWS IoT, Azure) y analytics en tiempo real.
+    
+    Me atrae especialmente el enfoque de \TARGETCOMPANY\ hacia \COMPANYVALUES\ y su visión de transformación digital industrial. Mi experiencia implementando soluciones IoT en entornos mineros me ha enseñado a diseñar sistemas resilientes y escalables, competencias clave para sus iniciativas de Industry 4.0.
+}{
+\ifthenelse{\equal{\COVERLETTERTEMPLATE}{lead}}{
+    % Para technical lead
+    Como líder técnico, he dirigido equipos multidisciplinarios de hasta 8 ingenieros, gestionado presupuestos de $500K+ y entregado proyectos que generaron $2M+ en nuevos contratos. Mi enfoque combina excelencia técnica con habilidades de gestión, mentoring y comunicación efectiva con stakeholders.
+    
+    La cultura de \TARGETCOMPANY\ centrada en \COMPANYVALUES\ se alinea perfectamente con mi filosofía de liderazgo. Mi experiencia estableciendo arquitecturas escalables y procesos de desarrollo eficientes me permite contribuir tanto a nivel estratégico como en la ejecución técnica.
+}{
+    % Para startup/entrepreneur (default)
+    Como emprendedor técnico, he co-fundado una startup que alcanzó $2M+ ARR, desarrollé MVPs completos en 6 meses y escalé arquitecturas de 10 a 10,000+ dispositivos conectados. Mi experiencia abarca desde desarrollo full-stack hasta fundraising y construcción de equipos técnicos.
+    
+    El espíritu innovador de \TARGETCOMPANY\ y su enfoque en \COMPANYVALUES\ resuena con mi mentalidad emprendedora. Mi experiencia navegando la incertidumbre startup y construyendo productos desde cero me da una perspectiva única sobre agilidad, resourcefulness y orientación a resultados.
+}}}}
+
+% =============================================================================
+% PÁRRAFO DE PROYECTOS ESPECÍFICOS
+% =============================================================================
+
+Entre mis logros más relevantes destaco:
+
+\begin{itemize}
+    \item \textbf{Plataforma IoT Industrial}: Arquitecté sistema completo que maneja 500K+ mediciones/día con 99.9\% uptime, resultando en $2M+ nuevos contratos
+    \item \textbf{Liderazgo Técnico}: Dirigí equipo de 5+ ingenieros implementando metodologías Agile que incrementaron productividad en 40\%
+    \item \textbf{Optimización de Sistemas}: Reduje tiempo de diagnóstico en 75\% mediante desarrollo de algoritmos avanzados y interfaces intuitivas
+    \item \textbf{Innovation \& Patents}: Contribuí a 2 patents en IoT industrial y establecí partnerships estratégicos con proveedores cloud
+\end{itemize}
+
+% =============================================================================
+% PÁRRAFO DE CIERRE
+% =============================================================================
+
+Estoy convencido de que mi experiencia técnica, combinada con mi pasión por la innovación y mi track record entregando resultados medibles, me posicionan como un candidato ideal para contribuir al éxito de \TARGETCOMPANY. Me entusiasma la posibilidad de discutir cómo mi experiencia puede agregar valor a su equipo y sus objetivos estratégicos.
+
+Agradezco su tiempo y consideración. Quedo a disposición para una entrevista en la que podamos profundizar sobre cómo mi experiencia se alinea específicamente con sus necesidades.
+
+\closing{Atentamente,}
+
+% Espacio para firma (si se imprime)
+\vspace{1cm}
+
+% =============================================================================
+% INFORMACIÓN ADICIONAL
+% =============================================================================
+
+\textbf{Adjunto:} CV actualizado y portafolio de proyectos
+
+\textbf{Disponibilidad:} Inmediata para entrevistas y incorporación flexible según necesidades del proyecto
+
+\textbf{Referencias:} Disponibles bajo solicitud
+
+\end{letter}
+
+% Información de generación automática (comentario)
+% Generado automáticamente el \today
+% Template usado: \COVERLETTERTEMPLATE
+% Empresa objetivo: \TARGETCOMPANY
+% Posición objetivo: \TARGETPOSITION
+
+\end{document}

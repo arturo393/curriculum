@@ -1,0 +1,120 @@
+% ===============================================
+% VARIABLES DE PERSONALIZACIÓN DEL CV
+% ===============================================
+% Este archivo contiene todas las variables que se pueden personalizar
+% para generar CVs específicos según la empresa y posición
+
+% INFORMACIÓN PERSONAL BÁSICA
+\newcommand{\cvfirstname}{Arturo}
+\newcommand{\cvlastname}{Veras Olivos}
+\newcommand{\cvaddress}{Santiago, La Florida}
+\newcommand{\cvmobile}{+56 9 82413883}
+\newcommand{\cvemail}{a.veras@gmail.com}
+\newcommand{\cvlinkedin}{linkedin.com/in/arturo-veras}
+\newcommand{\cvgithub}{github.com/arturoveras}
+\newcommand{\cvwebsite}{portfolio.arturoveras.com}
+
+% PERFIL PROFESIONAL - VERSIONES POR ENFOQUE
+\newcommand{\cvprofilesoftware}{
+Ingeniero Civil Electrónico con 9+ años desarrollando soluciones full-stack, desde sistemas backend escalables (Python, Node.js) hasta interfaces React modernas. Especializado en arquitecturas de microservicios y sistemas de monitoreo en tiempo real que procesan 500K+ datos diarios. Experiencia liderando equipos de desarrollo y optimizando pipelines CI/CD en entornos cloud.
+}
+
+\newcommand{\cvprofilefirmware}{
+Ingeniero Civil Electrónico con 9+ años diseñando firmware embebido para sistemas críticos en industria minera y automotriz. Expert en STM32, C/C++ y protocolos de comunicación IoT (LoRa, I2C, SPI). Desarrollé firmware para 20+ dispositivos con 99.9\% uptime en ambientes hostiles subterráneos, optimizando consumo energético y confiabilidad.
+}
+
+\newcommand{\cvprofileiot}{
+Ingeniero Civil Electrónico especializado en soluciones IoT end-to-end para Industria 4.0. 9+ años integrando hardware embebido (STM32, ESP32) con platforms cloud (Google Cloud, MongoDB) para sistemas de monitoreo industrial. Lideré proyectos que digitalizaron operaciones mineras, reduciendo tiempo de diagnóstico en 75\% mediante dashboards React en tiempo real.
+}
+
+\newcommand{\cvprofilelead}{
+Ingeniero Civil Electrónico con 9+ años evolucionando de desarrollador individual a líder técnico. Dirijo equipos multidisciplinarios en el desarrollo de soluciones tecnológicas complejas, desde firmware embebido hasta sistemas full-stack. Gestiono arquitecturas de software que sirven 50+ clientes industriales, implementando metodologías ágiles y DevOps para entregas continuas.
+}
+
+% EXPERIENCIA DETALLADA - UQOMM (ENFOQUE VARIABLE)
+\newcommand{\cvuqommsoftware}{
+\item \textbf{Arquitecto de Software:} Diseñé sistema de monitoreo RF full-stack (Python + React + MongoDB) que procesa 500K+ mediciones diarias en tiempo real para equipos mineros
+\item \textbf{Backend Developer:} Desarrollé APIs REST y microservicios que reducen latencia de consultas en 60\%, implementando MQTT para comunicación IoT
+\item \textbf{DevOps Engineer:} Administro infraestructura Google Cloud con Docker containers que sirve 50+ clientes mineros con 99.9\% SLA
+\item \textbf{Team Lead:} Lideré implementación de metodologías ágiles que aumentaron velocidad de desarrollo en 40\%
+}
+
+\newcommand{\cvuqommfirmware}{
+\item \textbf{Firmware Developer:} Desarrollé firmware STM32 Cortex M0+ para 20+ dispositivos de comunicaciones subterráneas con optimización de batería para 30+ días autonomía
+\item \textbf{Protocol Engineer:} Implementé protocolos LoRa y comunicación serial que mejoraron alcance de transmisión en 300\% en túneles mineros
+\item \textbf{Hardware Integration:} Integré sensores RF con microcontroladores para mediciones precisas (±0.1dB) en ambientes con interferencia extrema
+\item \textbf{Testing \& Validation:} Diseñé marcos de pruebas automatizadas que redujeron tiempo de validación de firmware en 50\%
+}
+
+\newcommand{\cvuqommiot}{
+\item \textbf{IoT Solutions Architect:} Diseñé arquitectura end-to-end desde sensores embebidos hasta dashboards cloud para monitoreo industrial en tiempo real
+\item \textbf{Digital Transformation Lead:} Implementé solución que digitalizó operaciones de RF en minería, eliminando procesos manuales que tomaban 4+ horas diarias
+\item \textbf{Data Pipeline Engineer:} Construí pipelines ETL que procesan y almacenan 100GB+ de datos de telemetría mensual con procesamiento ML para detección de anomalías
+\item \textbf{Industrial Systems:} Integré equipos legacy con sistemas modernos mediante protocolos industriales y APIs custom
+}
+
+% HABILIDADES TÉCNICAS - VERSIONES ESPECIALIZADAS
+\newcommand{\cvskillssoftware}{
+\cvcomputer{\textbf{Backend Development}}{Python (Expert), Node.js, Java SpringBoot}{\textbf{Frontend Development}}{React (Advanced), JavaScript ES6+, TypeScript}
+\cvcomputer{\textbf{Databases \& Storage}}{MongoDB, PostgreSQL, Redis}{\textbf{Cloud \& DevOps}}{Google Cloud, Docker, Git, CI/CD}
+\cvcomputer{\textbf{APIs \& Protocols}}{REST, GraphQL, MQTT, WebSockets}{\textbf{Testing \& Quality}}{Jest, PyTest, Selenium, Code Review}
+}
+
+\newcommand{\cvskillsfirmware}{
+\cvcomputer{\textbf{Embedded Development}}{C/C++ (Expert), STM32 (Expert), ESP32}{\textbf{Communication Protocols}}{LoRa, I2C, SPI, UART, CANBus}
+\cvcomputer{\textbf{Hardware Integration}}{Analog/Digital design, PCB review}{\textbf{Development Tools}}{STM32CubeIDE, GDB, Oscilloscope}
+\cvcomputer{\textbf{RTOS \& Optimization}}{FreeRTOS, Memory optimization, Power management}{\textbf{Testing \& Debug}}{JTAG, Logic Analyzers, Unit Testing}
+}
+
+\newcommand{\cvskillsiot}{
+\cvcomputer{\textbf{IoT Platforms}}{Google Cloud IoT, MQTT brokers, LoRaWAN}{\textbf{Edge Computing}}{STM32, ESP32, Raspberry Pi}
+\cvcomputer{\textbf{Data Processing}}{Python pandas, Time series DB, Analytics}{\textbf{Industrial Protocols}}{Modbus, CANBus, Serial comm}
+\cvcomputer{\textbf{Visualization}}{React dashboards, Grafana, Real-time charts}{\textbf{Integration}}{REST APIs, Webhooks, Legacy systems}
+}
+
+% PROYECTOS DESTACADOS - VARIABLES POR ENFOQUE
+\newcommand{\cvprojectssoftware}{
+\cventry{2021-Presente}{Sistema Monitoreo RF Industrial}{Full-Stack Application}{}{}{
+Plataforma web completa para monitoreo de equipos de radiofrecuencia en minería subterránea.
+\begin{itemize}
+\item \textbf{Stack:} Python FastAPI + React + MongoDB + Google Cloud
+\item \textbf{Escala:} 500K+ mediciones/día, 50+ clientes, 99.9\% uptime
+\item \textbf{Impacto:} Redujo tiempo de diagnóstico de 4 horas a 15 minutos
+\end{itemize}
+}
+}
+
+\newcommand{\cvprojectsfirmware}{
+\cventry{2021-Presente}{Firmware Comunicaciones Mineras}{STM32 Embedded Systems}{}{}{
+Desarrollo de firmware para dispositivos de comunicación en túneles subterráneos.
+\begin{itemize}
+\item \textbf{Tecnología:} STM32 Cortex M0+, C/C++, LoRa, FreeRTOS
+\item \textbf{Características:} 30+ días autonomía, -40°C a +85°C operación
+\item \textbf{Logro:} 300\% mejora en alcance vs. solución anterior
+\end{itemize}
+}
+}
+
+% EDUCACIÓN Y CERTIFICACIONES
+\newcommand{\cveducation}{
+\cventry{2006--2014}{Ingeniero Civil Electrónico - Mención Computadores}{Universidad Técnica Federico Santa María}{Valparaíso}{}{}
+}
+
+\newcommand{\cvthesis}{
+\cvitem{Título}{\emph{Implementación de un Generador de Rutas en un Sistema de Navegación de un Robot Móvil Cognitivo}}
+\cvitem{Descripción}{Integré algoritmos de path planning con SLAM para navegación autónoma, implementando A* optimizado para entornos dinámicos.}
+}
+
+% IDIOMAS
+\newcommand{\cvlanguages}{
+\cvitem{Español}{Nativo}
+\cvitem{Inglés}{Avanzado (Lectura), Intermedio-Alto (Conversación)}
+}
+
+% CERTIFICACIONES Y CURSOS
+\newcommand{\cvcertifications}{
+\cventry{Noviembre 2022}{Metodologías Ágiles}{HoruS Management Strategy}{Sigma Telecom}{}{}{}
+\cventry{Julio 2019}{Scrum + Kanban}{Desarrollo Ágil}{eClass}{}{}{}
+\cventry{Enero 2017}{Diseño de Circuitos Integrados}{Escuela de Verano}{Synopsys - UTFSM}{}{}{}
+\cventry{Agosto 2015}{Ganador Concurso I+D}{Proyecto HH Motors}{Fundación Copec UC}{}{}
+}

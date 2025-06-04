@@ -1,0 +1,170 @@
+% ===============================================
+% CV ESPECIALIZADO - SOFTWARE DEVELOPER
+% ===============================================
+% Template optimizado para posiciones de desarrollo de software
+
+\documentclass[11pt, a4paper]{moderncv}
+
+% Usar paquetes compartidos
+\makeatletter
+\edef\input@path{%
+  {\@currdir../../shared/moderncv/}%
+  {\@currdir../../shared/moderntimeline/}%
+  {\@currdir../../shared/pdfpages/}%
+  {\@currdir../../shared/xpatch/}%
+  {\@currdir../../shared/biblatex_modifications/}%
+  {\@currdir../../shared/cvitem_modifications/}%
+  \input@path%
+}
+\makeatother
+
+% Estilo moderno para tech companies
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+% Paquetes adicionales
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+% Ajustes de página
+\usepackage[scale=0.85, top=1cm, bottom=1cm]{geometry}
+\setlength{\hintscolumnwidth}{3cm}
+\AtBeginDocument{\recomputelengths}
+
+% Cargar variables
+\input{../variables/cv_variables.tex}
+
+% Configurar variables específicas para Software Developer
+\newcommand{\CVPROFILE}{\cvprofilesoftware}
+\newcommand{\CVUQOMMCONTENT}{\cvuqommsoftware}
+\newcommand{\CVSKILLS}{\cvskillssoftware}
+\newcommand{\CVPROJECTS}{\cvprojectssoftware}
+
+% Información personal
+\firstname{\cvfirstname}
+\familyname{\cvlastname}
+\title{Senior Software Developer}
+\address{\cvaddress}{}
+\mobile{\cvmobile}
+\email{\cvemail}
+\social[linkedin]{\cvlinkedin}
+\social[github]{\cvgithub}
+\homepage{\cvwebsite}
+
+% ===============================================
+% DOCUMENTO
+% ===============================================
+\begin{document}
+
+\makecvtitle
+
+% ===============================================
+% PERFIL PROFESIONAL
+% ===============================================
+\section{Perfil Profesional}
+\CVPROFILE
+
+% ===============================================
+% EXPERIENCIA PROFESIONAL
+% ===============================================
+\section{Experiencia Profesional}
+
+% UQOMM - Enfoque Software
+\cventry{Septiembre 2021 -- Presente}{Encargado de Software \& Full-Stack Developer}{UQOMM}{Con Con, Chile}{\url{www.uqomm.com}}{
+Líder técnico en el desarrollo de soluciones software para monitoreo industrial:
+\begin{itemize}
+\CVUQOMMCONTENT
+\end{itemize}
+}
+
+% BlackGPS - Enfoque Software
+\cventry{Julio 2017 -- Agosto 2021}{Software Engineer \& Mobile Developer}{BlackGPS}{Santiago, Chile}{\url{www.blackgps.com}}{
+Desarrollo full-stack para plataforma de gestión vehicular enterprise:
+\begin{itemize}
+\item \textbf{Backend Development:} Arquitecté microservicios Java SpringBoot que procesan 100K+ eventos GPS diarios con latencia <100ms
+\item \textbf{API Design:} Diseñé REST APIs para integración con 15+ tipos de dispositivos de tracking vehicular
+\item \textbf{Mobile Development:} Desarrollé app Flutter con 50K+ descargas, implementando comunicación Bluetooth y mapas en tiempo real
+\item \textbf{Database Optimization:} Optimicé queries PostgreSQL que redujeron tiempo de consultas complejas de 30s a 2s
+\item \textbf{DevOps:} Implementé CI/CD pipeline que redujo tiempo de deployment de 2 horas a 15 minutos
+\end{itemize}
+}
+
+% ===============================================
+% PROYECTOS DE SOFTWARE
+% ===============================================
+\section{Proyectos Técnicos Destacados}
+
+\CVPROJECTS
+
+\cventry{2020--2021}{Microservicios de Telemetría}{BlackGPS Architecture}{}{}{
+Migración de monolito a arquitectura de microservicios para escalabilidad.
+\begin{itemize}
+\item \textbf{Stack:} Java SpringBoot + PostgreSQL + Redis + Docker
+\item \textbf{Resultado:} 300\% mejora en throughput, 99.9\% uptime
+\item \textbf{Métricas:} 100K+ eventos/día, <100ms latencia promedio
+\end{itemize}
+}
+
+\cventry{2019--2020}{App Móvil Control Vehicular}{Flutter Development}{}{}{
+Aplicación móvil para control y monitoreo de flotas comerciales.
+\begin{itemize}
+\item \textbf{Tecnologías:} Flutter, Dart, REST APIs, Maps SDK
+\item \textbf{Features:} Tracking tiempo real, geofencing, reportes
+\item \textbf{Adopción:} 50K+ descargas, 4.5★ rating en stores
+\end{itemize}
+}
+
+% ===============================================
+% HABILIDADES TÉCNICAS SOFTWARE
+% ===============================================
+\section{Stack Tecnológico}
+
+\CVSKILLS
+
+\cvcomputer{\textbf{Metodologías}}{Agile/Scrum, TDD, Code Review}{\textbf{Arquitectura}}{Microservices, REST APIs, MVC}
+
+% ===============================================
+% PROYECTOS OPEN SOURCE
+% ===============================================
+\section{Contribuciones Open Source}
+\cvitem{GitHub}{\url{github.com/arturoveras} - 15+ repositorios públicos}
+\cvitem{Proyectos}{Librerías IoT, herramientas de monitoreo, demos técnicos}
+\cvitem{Stack Overflow}{Top 10\% en tags: Python, React, Embedded Systems}
+
+% ===============================================
+% EDUCACIÓN
+% ===============================================
+\section{Educación}
+\cveducation
+
+\section{Memoria de Título}
+\cvthesis
+
+% ===============================================
+% CERTIFICACIONES
+% ===============================================
+\section{Certificaciones Técnicas}
+\cvcertifications
+
+% Certificaciones específicas de software (agregar según tengas)
+\cventry{Online}{Python Advanced}{Coursera/edX}{}{}{Certificaciones en frameworks modernos}
+\cventry{Online}{React \& Node.js}{Udemy/Platzi}{}{}{Desarrollo full-stack moderno}
+
+% ===============================================
+% IDIOMAS
+% ===============================================
+\section{Idiomas}
+\cvlanguages
+
+% ===============================================
+% INFORMACIÓN ADICIONAL
+% ===============================================
+\section{Información Adicional}
+\cvitem{Metodologías}{Scrum Master certified, experiencia con Jira, Confluence}
+\cvitem{Code Quality}{Clean Code advocate, 90\%+ test coverage en proyectos}
+\cvitem{Learning}{Constantemente actualizando skills: Next.js, TypeScript, GraphQL}
+
+\end{document}

@@ -1,0 +1,159 @@
+% ===============================================
+% TEMPLATE BASE MODERNO - CV ARTURO VERAS
+% ===============================================
+% Template base optimizado con diseño moderno y estructura profesional
+
+\documentclass[11pt, a4paper]{moderncv}
+
+% Usar paquetes compartidos
+\makeatletter
+\edef\input@path{%
+  {\@currdir../shared/moderncv/}%
+  {\@currdir../shared/moderntimeline/}%
+  {\@currdir../shared/pdfpages/}%
+  {\@currdir../shared/xpatch/}%
+  {\@currdir../shared/biblatex_modifications/}%
+  {\@currdir../shared/cvitem_modifications/}%
+  \input@path%
+}
+\makeatother
+
+% Estilo y color (se puede personalizar por industria)
+\moderncvstyle{banking}  % 'casual', 'classic', 'banking', 'oldstyle', 'fancy'
+\moderncvcolor{blue}     % 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
+
+% Paquetes adicionales
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+
+% Ajustes de página optimizados
+\usepackage[scale=0.85, top=1cm, bottom=1cm]{geometry}
+\setlength{\hintscolumnwidth}{3cm}
+
+% Recomputar después de cambios
+\AtBeginDocument{\recomputelengths}
+
+% Cargar variables personalizables
+\input{../variables/cv_variables.tex}
+
+% Información personal (usa variables)
+\firstname{\cvfirstname}
+\familyname{\cvlastname}
+\title{Ingeniero Civil Electrónico}
+\address{\cvaddress}{}
+\mobile{\cvmobile}
+\email{\cvemail}
+\social[linkedin]{\cvlinkedin}
+\social[github]{\cvgithub}
+\homepage{\cvwebsite}
+
+% Foto profesional (opcional, comentar si no se desea)
+% \photo[70pt][0.4pt]{picture}
+
+% ===============================================
+% INICIO DEL DOCUMENTO
+% ===============================================
+\begin{document}
+
+% Título con diseño mejorado
+\makecvtitle
+
+% ===============================================
+% PERFIL PROFESIONAL
+% ===============================================
+\section{Perfil Profesional}
+% Variable que se cambia según el enfoque del CV
+\CVPROFILE
+
+% ===============================================
+% EXPERIENCIA PROFESIONAL
+% ===============================================
+\section{Experiencia Profesional}
+
+% UQOMM - Experiencia principal (contenido variable)
+\cventry{Septiembre 2021 -- Presente}{Encargado de Software \& Desarrollador Firmware}{UQOMM}{Con Con, Chile}{\url{www.uqomm.com}}{
+Uqomm provee soluciones de comunicaciones para minería subterránea. Como parte del equipo de I+D:
+\begin{itemize}
+\CVUQOMMCONTENT
+\end{itemize}
+}
+
+% BlackGPS - Experiencia previa
+\cventry{Julio 2017 -- Agosto 2021}{Ingeniero de Hardware \& Software}{BlackGPS}{Santiago, Chile}{\url{www.blackgps.com}}{
+Empresa líder en soluciones de seguridad vehicular y gestión de flotas:
+\begin{itemize}
+\item \textbf{Hardware Engineer:} Diseñé dispositivo anti-robo para camiones con inhibidor GNSS/GSM, reduciendo robos en 90\% para clientes piloto
+\item \textbf{Backend Developer:} Desarrollé features en Java SpringBoot para procesamiento de datos GPS y CANBus de 1000+ vehículos
+\item \textbf{Mobile Developer:} Implementé funcionalidades Flutter para control vehicular vía Bluetooth, mejorando UX en 40\%
+\item \textbf{Hardware Support:} Configuré y mantuve dispositivos Teltonika, DCT Syrus, ERM Starlink para gestión de flotas enterprise
+\end{itemize}
+}
+
+% ===============================================
+% PROYECTOS DESTACADOS
+% ===============================================
+\section{Proyectos Destacados}
+
+% Contenido variable según enfoque
+\CVPROJECTS
+
+\cventry{2017--2021}{Plataforma Anti-robo Vehicular}{BlackGPS Project}{}{}{
+Sistema integral de seguridad para prevención de robo de vehículos comerciales.
+\begin{itemize}
+\item \textbf{Componentes:} Hardware inhibidor + Backend Java + App Flutter
+\item \textbf{Resultados:} 90\% reducción en robos, 1000+ vehículos protegidos
+\item \textbf{Tecnologías:} STM32, Java SpringBoot, Flutter, GPS/GSM
+\end{itemize}
+}
+
+\cventry{2016--2017}{Emprendimiento Deuterio}{Generadores de Hidrógeno}{Viña del Mar}{}{
+Startup enfocada en tecnología innovadora para generación eficiente de hidrógeno.
+\begin{itemize}
+\item \textbf{Rol:} Co-founder, CTO, Director Comercial
+\item \textbf{Logros:} Prototipo funcional, búsqueda de financiamiento CORFO
+\item \textbf{Tecnologías:} Electroquímica, microcontroladores, instrumentación
+\end{itemize}
+}
+
+% ===============================================
+% EDUCACIÓN
+% ===============================================
+\section{Educación}
+\cveducation
+
+\section{Memoria de Título}
+\cvthesis
+
+% ===============================================
+% HABILIDADES TÉCNICAS
+% ===============================================
+\section{Habilidades Técnicas}
+% Contenido variable según enfoque
+\CVSKILLS
+
+% ===============================================
+% IDIOMAS
+% ===============================================
+\section{Idiomas}
+\cvlanguages
+
+% ===============================================
+% CERTIFICACIONES Y LOGROS
+% ===============================================
+\section{Certificaciones y Logros}
+\cvcertifications
+
+% ===============================================
+% INFORMACIÓN ADICIONAL (OPCIONAL)
+% ===============================================
+\section{Información Adicional}
+\cvitem{Disponibilidad}{Inmediata para nuevos desafíos profesionales}
+\cvitem{Movilidad}{Disponible para trabajar presencial, híbrido o remoto}
+\cvitem{Intereses}{IoT, Industria 4.0, Sistemas Embebidos, Arquitectura de Software}
+
+\end{document}

@@ -1,0 +1,68 @@
+% Template especializado para Desarrollador Firmware/Embebido
+% Orientado a empresas de hardware, IoT, sistemas embebidos
+
+% Variables específicas para desarrollador firmware
+\newcommand{\CVPROFILE}{%
+Ingeniero Electrónico especializado en sistemas embebidos con 9+ años desarrollando firmware crítico para aplicaciones industriales y IoT. Experto en microcontroladores STM32, protocolos de comunicación (LoRa, Modbus, CAN) y sistemas de tiempo real. Experiencia en optimización de consumo energético, debugging avanzado y desarrollo desde bare-metal hasta RTOS, con sistemas desplegados en entornos mineros extremos procesando 500K+ mediciones/día.
+}
+
+\newcommand{\CVUQOMMCONTENT}{%
+\textbf{Logros destacados:}
+\begin{itemize}
+\item Desarrollé firmware embebido (C/C++) para sistemas de monitoreo RF que operan 24/7 en minas subterráneas con 99.9\% uptime
+\item Implementé protocolos de comunicación LoRa y Modbus que mejoraron alcance de transmisión en 300\% en túneles mineros
+\item Optimicé algoritmos de procesamiento de señales que redujeron consumo energético en 40\% en dispositivos alimentados por batería
+\item Diseñé sistema de bootloader personalizado con actualización OTA para 200+ dispositivos remotos
+\item Lideré migración de sistema legacy (8-bit) a STM32 (32-bit) reduciendo tiempo de respuesta en 80\%
+\end{itemize}
+
+\textbf{Stack Tecnológico:}
+C/C++ embebido • STM32 (HAL/CMSIS) • FreeRTOS • LoRa/LoRaWAN • Modbus RTU/TCP • CAN Bus • SPI/I2C • UART • ADC/DAC • JTAG/SWD
+}
+
+\newcommand{\CVSKILLS}{%
+\section{Competencias Técnicas}
+
+\subsection{Desarrollo Firmware}
+\cvitem{Microcontroladores}{STM32 (F1/F4/L4), ESP32, ARM Cortex-M, PIC}
+\cvitem{Protocolos Comms.}{LoRa, LoRaWAN, Modbus RTU/TCP, CAN Bus, RS485, UART}
+\cvitem{RTOS \& Bare-metal}{FreeRTOS, ThreadX, Bare-metal programming, Real-time systems}
+\cvitem{Herramientas}{STM32CubeIDE, Keil µVision, JTAG/SWD, Logic Analyzer}
+
+\subsection{Hardware \& Sistemas}
+\cvitem{Diseño Electrónico}{Esquemáticos, PCB layout (Altium, KiCad), Análisis de señales}
+\cvitem{Sensores \& Actuadores}{ADC/DAC, PWM, Sensores analógicos, Encoders, Motores}
+\cvitem{Comunicaciones}{RF, LoRa, WiFi, Bluetooth, Ethernet, RS232/485}
+
+\subsection{Software \& DevOps}
+\cvitem{Lenguajes}{C/C++ (Avanzado), Python (Intermedio), Assembly (Básico)}
+\cvitem{Versionado}{Git, SVN, Branch management, Code review}
+\cvitem{Testing}{Unit testing, HIL (Hardware-in-the-Loop), Debugging}
+}
+
+\newcommand{\CVPROJECTS}{%
+\section{Proyectos Destacados}
+
+\subsection{Sistema de Monitoreo RF para Minería (2021-2024)}
+\cvitem{Descripción}{Sistema embebido para monitoreo continuo de equipos mineros con transmisión inalámbrica}
+\cvitem{Tecnologías}{STM32F4, LoRa, FreeRTOS, C/C++, Modbus, Python}
+\cvitem{Logros}{500K+ mediciones/día • 99.9\% uptime • 300\% mejora en alcance • 40\% reducción consumo}
+
+\subsection{Gateway IoT Industrial Multi-protocolo (2020-2021)}
+\cvitem{Descripción}{Gateway embebido para integración de múltiples protocolos industriales}
+\cvitem{Tecnologías}{STM32L4, ESP32, CAN Bus, Modbus, MQTT, WiFi}
+\cvitem{Logros}{200+ dispositivos conectados • OTA updates • 75\% reducción tiempo configuración}
+
+\subsection{Sistema de Control de Motores (2019-2020)}
+\cvitem{Descripción}{Controlador embebido para motores paso a paso con precisión micrométrica}
+\cvitem{Tecnologías}{STM32F1, PWM, Encoders, PID Control, CAN}
+\cvitem{Logros}{±1µm precisión • 90\% reducción vibraciones • Interface CAN para integración}
+
+\subsection{Datalogger de Alta Velocidad (2018-2019)}
+\cvitem{Descripción}{Sistema de adquisición de datos de alta velocidad para análisis de vibraciones}
+\cvitem{Tecnologías}{STM32H7, DMA, ADC, SD Card, USB, DSP}
+\cvitem{Logros}{100kSPS por canal • 8 canales simultáneos • Análisis FFT en tiempo real}
+}
+
+% Input del template base
+\input{../base/cv_base_template.tex}
