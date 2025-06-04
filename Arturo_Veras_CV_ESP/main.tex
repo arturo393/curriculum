@@ -1,0 +1,125 @@
+% Curriculum de Ejemplo
+
+\documentclass[11pt, a4paper]{moderncv}
+\moderncvcolor{blue}
+\moderncvstyle{banking}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+%Ajuste de margenes de pagina
+\usepackage[scale=0.8]{geometry}
+
+\AtBeginDocument{\recomputelengths}
+
+%Datos personales
+\firstname{Arturo}
+\familyname{Veras Olivos}
+\title{Currículum Vit\ae}
+\address{Santiago}{La Florida}
+\mobile{ +56 9 82413883}
+\email{a.veras@gmail.com}
+
+\begin{document}
+\maketitle
+
+\section{Perfil}
+Ingeniero Civil Electrónico con más de 9 años de experiencia demostrada en el ciclo completo de desarrollo de productos tecnológicos. Mi expertise abarca desde el diseño de hardware y firmware embebido (C/C++, STM32) hasta el desarrollo de software full-stack (Python, React, MongoDB) y la administración de sistemas (Linux, Google Cloud). He liderado y contribuido a proyectos de I+D en entornos exigentes como las comunicaciones para minería y la seguridad vehicular, enfocándome en crear soluciones robustas y eficientes.
+
+\section{Experiencia}
+\subsection{Empresas}
+\cventry{Septiembre 2021 - Actual (3 años y 4 meses)}{Encargado de Software y Desarrollador Firmware}{UQOMM \url{www.uqomm.com}}{Con Con}{Chile}{
+Uqomm provee soluciones de comunicaciones para minería subterránea. Como parte del equipo de I+D, sus logros y responsabilidades incluyen:
+\\
+\begin{itemize}
+ \item \textbf{Encargado de Software:} Planificación, gestión, diseño y desarrollo de proyectos de software para:
+ \begin{itemize}
+     \item Sistema de monitoreo de amplificadores en Python, integrando hardware serial, React y MongoDB.
+     \item Controlar instrumentos de RF en Python (analizador de espectros, generadores de señales) y realizar mediciones precisas.
+     \item Diseño e implementación de una aplicación desde cero, desde la captura de datos de dispositivos seriales hasta la visualización en tiempo real a través de un frontend React, utilizando tecnologías como Python, MQTT y MongoDB.
+ \end{itemize}
+ \item \textbf{Desarrollador de Firmware}: Planificación, gestión, diseño y desarrollo de proyectos firmware en C y C++ para microcontroladores STM32 Cortex M0, incluyendo la gestión de periféricos, el manejo de interrupciones y la optimización de código.
+ \item \textbf{Administrador de Sistemas}: Responsable de la configuración, mantenimiento y monitoreo de servidores Google Cloud, Odoo y Linux, incluyendo la gestión de usuarios, permisos, respaldos y actualizaciones.
+ \end{itemize}
+}
+\cventry{Julio 2017 - Agosto 2021 (4 años y 2 meses)}{Ingeniero de Hardware}{BlackGPS \url{www.blackgps.com}}{Santiago}{Chile}{
+En BlackGPS, empresa dedicada a soluciones de seguridad y gestión de flotas, sus responsabilidades abarcaron:
+\\
+\begin{itemize}
+\item \textbf{Ingeniero de Diseño y Hardware:} Planificación, diseño y desarrollo de dispositivo anti-robo para camiones con inhibidor de señales GNSS y GSM.
+\item \textbf{Soporte de Hardware:} Configuración y soporte de dispositivos de control de flotas (Teltonika, DCT Syrus, ERM Starlink).
+\item \textbf{Desarrollador Backend:} Implementación de nuevas funcionalidades en servidor SpringBoot en Java para procesamiento de datos GPS y CANBus.
+\item \textbf{Desarrollador Flutter:} Mejora de aplicación móvil, incluyendo comunicación Bluetooth para control de vehículos.
+\end{itemize}
+}
+\subsection{Proyectos}
+\cventry{Enero 2017 - Noviembre 2017 (11 meses)}{Ingeniero Electrónico}{Prosismic SpA}{Viña del Mar}{Chile}{
+\begin{itemize}
+\item Desarrollo de prototipo funcional para red de 80 sensores de detección temprana de sismos.
+\end{itemize}}
+
+\cventry{Junio 2016 - Diciembre 2017 (1 año y 7 meses)}{Fundador}{Deuterio - Generadores de Hidrógeno}{Viña del Mar}{Chile}{
+Spin-off enfocado en nueva tecnología para generación de hidrógeno.
+\begin{itemize}
+\item \textbf{Director Comercial:} Búsqueda de financiamiento y desarrollo de modelos de negocios.
+\item \textbf{Investigador:} Diseño de prototipos para generación eficiente de gas oxihidrógeno.
+\item \textbf{Desarrollador:} Programación de microcontroladores y montaje de banco de pruebas.
+\end{itemize}}
+
+\cventry{Enero 2016 - Julio 2016 (7 meses)}{Director Técnico}{Proyecto Electro-Photo-Sonólisis}{Viña del Mar}{}{
+Coordinación de proyecto I+D para generador de hidrógeno innovador. Programación de microcontrolador para tren de pulsos y pruebas de eficiencia en grupo electrógeno.}
+
+\cventry{Julio 2015 - Diciembre 2016 (1 año y 6 meses)}{Ingeniero Electrónico}{Proyecto HH Motors}{Valparaíso}{}{
+Investigación en electrolizador alcalino y modificación de sistema de inyección electrónica de combustible en vehículos.}
+
+\subsection{Prácticas}
+\cventry{Enero 2014 - Marzo 2014 (3 meses)}{Investigador en Práctica}{Centro Científico Tecnológico Valparaíso}{Valparaíso}{}{
+Investigación sobre conexión GPU-PC vía USB/Ethernet para Computación Paralela. \url{https://github.com/mavillan/proyectoRpi}}
+
+\cventry{Diciembre 2012 - Febrero 2013 (3 meses)}{Programador en Práctica}{Laboratorio de Instrumentación y Fotónica}{Santiago}{Universidad de Chile}{
+Programación de FPGA Xilinx Virtex-5 usando LabVIEW y Python. Instalación y depuración de módulos.}
+
+\cventry{Diciembre 2009 - Febrero 2010 (3 meses)}{Investigador en Práctica}{Universidad Técnica Federico Santa María}{Valparaíso}{}{
+Investigación de microcontroladores y tarjetas de desarrollo. Mantenimiento de página web de ofertas laborales.}
+
+%\subsection{Otros Trabajos}
+%\cventry{Enero 2015 - Marzo 2015}{Ayudante Administrativo}{Bottai SA.}{Arica}{}{Realizó las %pruebas para el área del control de calidad de diferentes tipos de hormigón.}
+
+%\cventry{Octubre 2013 - Noviembre 2013}{Vendedor}{Entel}{Valparaíso}{}{Vendedor puerta a %puerta de productos Entel para el hogar tales como Internet, televisión satelital y telefonía.}
+
+\section{Educación}
+\cventry{2006--2014}{Ingeniero Civil Electrónico - Mención Computadores} {Universidad Técnica Federico Santa María}{Valparaíso}{}{}
+\section{Memoria de Título}
+\cvitem{T\'itulo}{\emph{Implementación de un Generador de Rutas en un Sistema de Navegación de un Robot Móvil Cognitivo}}
+\cvitem{Descripci\'on}{Se integró un generador de rutas a las características de Memoria Cognitiva y SLAM del robot móvil IRMA-III para que pudiese moverse libremente en búsqueda de un objetivo.}
+
+\section{Habilidades Técnicas}
+
+\cvcomputer{\textbf{Lenguajes de programación}}{C/C++, Python}{\textbf{Sistemas Operativos}}{Linux}
+\cvcomputer{\textbf{Scripting}} {Bash, Ansible}{\textbf{Control de versiones}}{Git}
+\cvcomputer{\textbf{Contenedores}}{Docker}{\textbf{Redes y Comunicaciones}}{TCP/IP, LoRa, GPS, I2C, SPI}
+\cvcomputer{\textbf{Programación microcontroladores}}{STM32, ESP32, Arduino}
+
+%\section{Gestión y Habilidades Interpersonales}
+%\cvitem{Experiencia Técnica}{Desarrollo de firmware y software, diseño de circuitos electrónicos e %integración de tecnologías.}
+%\cvitem{Gestión de Proyectos}{Coordinación de equipos multidisciplinarios para lograr objetivos.}
+%\cvitem{Innovación}{Participación en el desarrollo de nuevas tecnologías y características.}
+%\cvitem{Enfoque en el Usuario}{Consideración de necesidades y experiencias de los usuarios en el %desarrollo de productos.}
+%\cvitem{Adaptabilidad}{Capacidad de aprender rápidamente y adaptarse a cambios en productos e industrias.}
+
+\section{Idiomas}
+\cvitem{Español}{Nativo}
+\cvitem{Inglés}{Lectura Avanzada, Hablado Medio}
+\section{Concursos y Talleres}
+
+\cventry{Noviembre 2022}{HoruS Management Strategy}{Formación en Metodologías Ágiles}{Sigma Telecom}{}{}{}
+\cventry{Julio 2019}{Powered by eClass}{Desarrollo Ágil: Scrum + Kanban}{BlackGps}{}{}{}
+\cventry{Enero 2017}{Escuela de Verano}{Diseño de Circuitos Integrados Analógicos}{Synopsys  - UTFSM}{}{}{}
+\cventry{Agosto 2015}{Ganador del concurso I+D aplicada con el proyecto HH Motors}{Aplica tu idea}{Fundación Copec UC}{}{}
+\cventry{Octubre 2015}{Concurso-Exposición de Proyectos Tecnológicos}{EXPOTEC}{UTFSM}{}{}
+
+\end{document}
