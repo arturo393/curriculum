@@ -54,7 +54,7 @@ Necesitas tener LaTeX instalado en tu sistema. Aquí tienes las opciones según 
 # Opción 2: BasicTeX (ligero, ~100MB) + paquetes necesarios
 brew install --cask basictex
 sudo tlmgr update --self
-sudo tlmgr install moderncv moderntimeline pdfpages xpatch biblatex
+sudo tlmgr install moderncv moderntimeline pdfpages xpatch biblatex geometry tikz
 
 # Opción 3: Homebrew (TeX Live)
 brew install --cask mactex-no-gui

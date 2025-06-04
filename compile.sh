@@ -37,40 +37,38 @@ compile_cv() {
     
     cd "$dir"
     
-    # Limpiar archivos auxiliares previos
-    rm -f *.aux *.log *.out *.toc *.bbl *.blg *.fls *.fdb_latexmk
-    
     # Compilar el documento principal
-    if pdflatex main.tex; then
+    print_status "Ejecutando primera pasada de pdflatex para $lang..."
+    pdflatex -interaction=nonstopmode main.tex > compile.log 2>&1
+    
+    if [ -f "main.pdf" ]; then
         print_status "Primera pasada completada para $lang"
         
         # Segunda pasada para resolver referencias
-        if pdflatex main.tex; then
+        print_status "Ejecutando segunda pasada de pdflatex para $lang..."
+        pdflatex -interaction=nonstopmode main.tex >> compile.log 2>&1
+        
+        if [ -f "main.pdf" ]; then
             print_status "Segunda pasada completada para $lang"
-            
-            # Si existe bibliografía, compilar con bibtex
-            if [ -f "cvreferences.bib" ] || [ -f "publications.bib" ]; then
-                print_status "Procesando bibliografía para $lang..."
-                bibtex main || print_warning "Error en bibtex, continuando..."
-                pdflatex main.tex
-                pdflatex main.tex
-            fi
             
             print_status "✓ CV en $lang compilado exitosamente"
             
-            # Verificar que el PDF se creó
+            # Verificar que el PDF se creó y mostrar tamaño
             if [ -f "main.pdf" ]; then
-                print_status "PDF generado: $dir/main.pdf"
+                local size=$(ls -la main.pdf | awk '{print $5}')
+                print_status "PDF generado: $dir/main.pdf ($size bytes)"
             else
                 print_error "No se pudo generar el PDF"
                 return 1
             fi
         else
             print_error "Error en segunda pasada de pdflatex para $lang"
+            cat compile.log | tail -20
             return 1
         fi
     else
         print_error "Error en primera pasada de pdflatex para $lang"
+        cat compile.log | tail -20
         return 1
     fi
     

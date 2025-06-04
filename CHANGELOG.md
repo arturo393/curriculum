@@ -13,12 +13,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Carpeta `shared/` para paquetes LaTeX compartidos
 - Documentación mejorada con estructura de carpetas y ejemplos de uso
 - Emojis y mejor formateo en README.md
+- Archivo `REQUIRED_PACKAGES.md` con análisis completo de dependencias LaTeX
+- Instalación y configuración completa de paquetes LaTeX necesarios
 
 ### Changed
 
 - Reestructuración completa del repositorio para eliminar duplicación de código
 - Movidos todos los paquetes LaTeX comunes a `shared/`
 - Actualizadas las rutas en archivos `.tex` para referenciar paquetes compartidos
+- Instalados paquetes LaTeX: `moderncv`, `moderntimeline`, `biblatex`, `fontawesome5`, `arydshln`, `multirow`
+- Configurado TeX Live 2025 en el PATH del sistema
+
+### Fixed
+
+- Corregido error de sintaxis `\cvcomputer` en CV español
+- Corregido escape de ampersand `R\&D` en CV inglés  
+- Mejorado manejo de errores en script de compilación
+- Ambos CVs (español e inglés) compilan exitosamente generando PDFs de 3 páginas
 - Simplificadas las carpetas de idiomas (solo archivos específicos)
 
 ### Removed
