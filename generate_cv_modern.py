@@ -43,10 +43,10 @@ class ModernCVGenerator:
     def parse_anexos_md(self, content):
         """Parsea anexos.md y extrae información estructurada"""
         data = {
-            "name": "Arturo Veras González",
+            "name": "Arturo Veras Olivos",
             "title": "Ingeniero Civil Electrónico",
-            "email": "arturoveras93@gmail.com",
-            "phone": "+56 9 5516 2574",
+            "email": "a.veras@gmail.com",
+            "phone": "+56 9 82413883",
             "location": "Santiago, Chile",
             "linkedin": "linkedin.com/in/arturo-veras",
             "github": "github.com/arturo393",
@@ -54,43 +54,84 @@ class ModernCVGenerator:
             "education": [],
             "skills": {},
             "languages": [],
-            "summary": ""
+            "summary": "Ingeniero Full-Stack de Sistemas Embebidos e IoT con 9+ años de experiencia en desarrollo tecnológico. Visión 360° del producto tecnológico: desde ideación hasta soporte al cliente. Especialista en conectar hardware, firmware, software y necesidades de negocio. Experiencia liderando equipos técnicos y gestionando arquitecturas completas en industrias críticas como minería subterránea y seguridad vehicular."
         }
         
-        # Extraer experiencia
-        if "## 💼 EXPERIENCIA PROFESIONAL" in content:
-            exp_section = content.split("## 💼 EXPERIENCIA PROFESIONAL")[1]
-            if "##" in exp_section:
-                exp_section = exp_section.split("##")[0]
-            
-            # Parsear cada experiencia
-            experiences = []
-            for line in exp_section.split('\n'):
-                if line.strip().startswith('###'):
-                    company = line.replace('###', '').strip()
-                    experiences.append({"company": company, "positions": []})
-                elif line.strip().startswith('**') and 'Cargo:' in line:
-                    if experiences:
-                        position = line.split('**Cargo:**')[1].strip()
-                        experiences[-1]["positions"].append({"title": position})
-            
-            data["experience"] = experiences
+        # Experiencia profesional corregida
+        data["experience"] = [
+            {
+                "company": "UQOMM SpA",
+                "position": "Encargado de Software y Firmware",
+                "period": "Septiembre 2021 - Actual (3 años 10 meses)",
+                "location": "Con Con, Chile",
+                "achievements": [
+                    "Desarrollo de sistema de monitoreo de amplificadores integrando hardware serial, React y MongoDB",
+                    "Control de instrumentos RF (analizador de espectros, generadores) con Python para mediciones precisas",
+                    "Diseño e implementación de aplicación desde cero: captura de datos hasta visualización en tiempo real",
+                    "Desarrollo firmware en C/C++ para microcontroladores STM32 Cortex M0 con gestión de periféricos",
+                    "Administración de servidores Google Cloud, Odoo y Linux con gestión de usuarios y respaldos"
+                ]
+            },
+            {
+                "company": "BlackGPS",
+                "position": "Ingeniero de Hardware",
+                "period": "Julio 2017 - Agosto 2021 (4 años 2 meses)",
+                "location": "Santiago, Chile",
+                "achievements": [
+                    "Diseño y desarrollo de dispositivo anti-robo para camiones con inhibidor de señales GNSS y GSM",
+                    "Configuración y soporte de dispositivos de control de flotas (Teltonika, DCT Syrus, ERM Starlink)",
+                    "Implementación de funcionalidades en servidor SpringBoot Java para procesamiento datos GPS y CANBus",
+                    "Mejora de aplicación móvil Flutter incluyendo comunicación Bluetooth para control de vehículos"
+                ]
+            },
+            {
+                "company": "Prosismic SpA",
+                "position": "Ingeniero Electrónico",
+                "period": "Enero 2017 - Noviembre 2017 (11 meses)",
+                "location": "Viña del Mar, Chile",
+                "achievements": [
+                    "Desarrollo de prototipo funcional para red de 80 sensores de detección temprana de sismos"
+                ]
+            },
+            {
+                "company": "Deuterio - Generadores de Hidrógeno",
+                "position": "Fundador",
+                "period": "Junio 2016 - Diciembre 2017 (1 año 7 meses)",
+                "location": "Viña del Mar, Chile",
+                "achievements": [
+                    "Director Comercial: Búsqueda de financiamiento y desarrollo de modelos de negocios",
+                    "Investigador: Diseño de prototipos para generación eficiente de gas oxihidrógeno",
+                    "Desarrollador: Programación de microcontroladores y montaje de banco de pruebas"
+                ]
+            }
+        ]
         
-        # Extraer habilidades técnicas
-        if "## 🛠️ COMPETENCIAS TÉCNICAS" in content:
-            skills_section = content.split("## 🛠️ COMPETENCIAS TÉCNICAS")[1]
-            if "##" in skills_section:
-                skills_section = skills_section.split("##")[0]
-            
-            current_category = ""
-            for line in skills_section.split('\n'):
-                if line.strip().startswith('###'):
-                    current_category = line.replace('###', '').strip()
-                    data["skills"][current_category] = []
-                elif line.strip().startswith('-') and current_category:
-                    skill = line.replace('-', '').strip()
-                    if skill:
-                        data["skills"][current_category].append(skill)
+        # Skills técnicas organizadas por categorías (basado en anexos.md)
+        data["skills"] = {
+            "Lenguajes de Programación": ["C/C++", "Python", "Java", "JavaScript"],
+            "Microcontroladores": ["STM32 Cortex M0", "ESP32", "Arduino", "FPGA Xilinx Virtex-5"],
+            "Sistemas y DevOps": ["Linux", "FreeRTOS", "Google Cloud", "Docker", "Git", "Bash/Ansible"],
+            "Comunicaciones": ["LoRa", "GPS/GNSS", "I2C", "SPI", "Bluetooth", "MQTT", "CANBus"],
+            "Web y Móvil": ["React", "SpringBoot", "Flutter", "MongoDB", "Express"],
+            "Instrumentación": ["RF", "Analizador de Espectros", "Generadores de Señales", "LabVIEW"]
+        }
+        
+        # Educación
+        data["education"] = [
+            {
+                "degree": "Ingeniero Civil Electrónico",
+                "institution": "Universidad Técnica Federico Santa María",
+                "period": "2006 - 2014",
+                "location": "Valparaíso, Chile",
+                "details": "Mención Computadores | Memoria: Implementación de Generador de Rutas en Robot Móvil Cognitivo"
+            }
+        ]
+        
+        # Idiomas
+        data["languages"] = [
+            {"name": "Español", "level": "Nativo"},
+            {"name": "Inglés", "level": "B2 Upper Intermediate"}
+        ]
         
         return data
     
@@ -134,28 +175,78 @@ class ModernCVGenerator:
         company_lower = company.lower()
         position_lower = position.lower()
         
-        customizations = {
+        # Detección de keywords por industria (misma lógica que ReportLab)
+        iot_keywords = ["IoT", "Edge Computing", "Sensores", "LoRa", "MQTT", "Embedded Systems"]
+        ai_keywords = ["Machine Learning", "AI", "Computer Vision", "Data Science", "Python"]
+        cloud_keywords = ["Cloud Computing", "AWS", "Google Cloud", "DevOps", "Microservices"]
+        hardware_keywords = ["Firmware", "STM32", "C/C++", "Hardware Design", "PCB"]
+        leadership_keywords = ["Technical Leadership", "Team Management", "Architecture", "Strategy"]
+        
+        detected_keywords = []
+        colors = {"primary": "#2563eb", "secondary": "#059669"}  # Azul por defecto
+        
+        # Prioridad 1: Roles específicos de hardware/embedded (más específico primero)
+        if any(keyword in position_lower for keyword in ['embedded', 'firmware', 'hardware', 'iot']):
+            detected_keywords = iot_keywords + hardware_keywords
+            colors = {"primary": "#2563eb", "secondary": "#1e40af"}  # Azul tecnológico
+        
+        # Prioridad 2: Roles de liderazgo
+        elif any(keyword in position_lower for keyword in ['lead', 'manager', 'director', 'architect', 'principal']):
+            detected_keywords = leadership_keywords
+            colors = {"primary": "#7c3aed", "secondary": "#6d28d9"}  # Púrpura liderazgo
+        
+        # Prioridad 3: Desarrollo de software (después de hardware y liderazgo)
+        elif any(keyword in position_lower for keyword in ['software', 'developer', 'programming']):
+            detected_keywords = ai_keywords + cloud_keywords
+            colors = {"primary": "#059669", "secondary": "#047857"}  # Verde desarrollo
+        
+        # Prioridad 4: Engineer genérico (último, para no interferir)
+        elif 'engineer' in position_lower and not any(hw in position_lower for hw in ['embedded', 'firmware', 'hardware']):
+            detected_keywords = ai_keywords + cloud_keywords
+            colors = {"primary": "#059669", "secondary": "#047857"}  # Verde desarrollo
+        
+        # Default
+        else:
+            detected_keywords = ["Problem Solving", "Innovation", "Technical Skills", "Collaboration"]
+            colors = {"primary": "#2563eb", "secondary": "#1e40af"}  # Azul por defecto
+        
+        # Personalización adicional por empresa específica
+        company_specific = {
             "globant": {
-                "colors": {"primary": "#00D4AA", "secondary": "#1F2937"},
-                "keywords": ["digital transformation", "iot edge", "embedded systems", "agile"],
                 "summary_suffix": " Especializado en transformación digital empresarial con tecnologías IoT Edge.",
                 "highlight_skills": ["STM32", "FreeRTOS", "C++", "Python", "Agile", "Linux"]
             },
             "google": {
-                "colors": {"primary": "#4285F4", "secondary": "#34A853"},
-                "keywords": ["scalability", "distributed systems", "cloud", "innovation"],
                 "summary_suffix": " Enfocado en sistemas escalables y tecnologías cloud-native.",
                 "highlight_skills": ["Python", "Distributed Systems", "Cloud", "Machine Learning"]
             },
             "microsoft": {
-                "colors": {"primary": "#0078D4", "secondary": "#107C10"},
-                "keywords": ["azure", "enterprise", "productivity", "ai"],
                 "summary_suffix": " Especializado en soluciones enterprise y plataformas Azure.",
                 "highlight_skills": ["Azure", "C#", "Enterprise", "AI"]
+            },
+            "spotify": {
+                "summary_suffix": " Enfocado en sistemas de streaming y experiencia de usuario.",
+                "highlight_skills": ["Python", "Microservices", "Real-time Systems", "Data Processing"]
+            },
+            "intel": {
+                "summary_suffix": " Especializado en sistemas embebidos y arquitecturas de procesador.",
+                "highlight_skills": ["Embedded Systems", "C/C++", "Hardware", "Performance Optimization"]
             }
         }
         
-        # Personalización por tipo de rol
+        base_customization = {
+            "colors": colors,
+            "detected_keywords": detected_keywords,
+            "keywords": detected_keywords,
+            "summary_suffix": f" Especializado en {position} para {company}.",
+            "highlight_skills": detected_keywords[:6]  # Primeros 6 keywords
+        }
+        
+        # Aplicar personalización específica de empresa si existe
+        if company_lower in company_specific:
+            base_customization.update(company_specific[company_lower])
+        
+        return base_customization
         role_customizations = {
             "iot": {
                 "highlight_skills": ["IoT", "Edge Computing", "MQTT", "LoRa", "Embedded Systems"],
@@ -770,55 +861,43 @@ class ModernCVGenerator:
     
     def customize_for_job_offer(self, job_description, position="", company=""):
         """Personaliza el CV según oferta de trabajo - Mejores prácticas 2025"""
+        
+        # Usar la misma lógica de personalización que ReportLab 2025
+        base_customization = self.get_job_customization(company, position)
+        
+        # Estructura esperada por el template HTML
         customization = {
-            'colors': {
-                'primary': '#2563eb',    # Azul profesional
-                'secondary': '#059669'   # Verde éxito
-            },
-            'highlight_skills': [],
+            'colors': base_customization['colors'],
+            'highlight_skills': base_customization.get('highlight_skills', []),
             'summary_prefix': '',
-            'summary_suffix': '',
-            'detected_keywords': [],
+            'summary_suffix': base_customization.get('summary_suffix', ''),
+            'detected_keywords': base_customization.get('detected_keywords', []),
             'company': company,
             'position': position,
             'generation_date': datetime.now().strftime("%d/%m/%Y")
         }
         
-        if not job_description:
-            return customization
+        # Si hay descripción de trabajo, analizar keywords adicionales
+        if job_description:
+            # Análisis adicional de keywords desde job description
+            job_lower = job_description.lower()
             
-        # Palabras clave IoT y tecnológicas modernas 2025
-        iot_keywords = [
-            'iot', 'internet of things', 'sensors', 'sensores', 'edge computing',
-            'embedded systems', 'sistemas embebidos', 'microcontroladores',
-            'arduino', 'raspberry pi', 'esp32', 'mqtt', 'zigbee', 'bluetooth',
-            'wifi', 'lora', 'lorawan', 'nb-iot', '5g', 'edge ai', 'tinyml',
-            'industrial iot', 'iiot', 'smart city', 'smart agriculture',
-            'monitoring', 'monitoreo', 'data collection', 'telemetry',
-            'remote sensing', 'predictive maintenance', 'digital twin',
-            'time series', 'real-time', 'cloud connectivity', 'aws iot',
-            'azure iot', 'google cloud iot', 'firmware', 'rtos',
-            'micropython', 'c++', 'python', 'javascript', 'node.js',
-            'interfaces', 'api', 'protocols', 'protocolos', 'modbus',
-            'can bus', 'spi', 'i2c', 'uart', 'tcp/ip', 'http', 'https',
-            'restful', 'websockets', 'machine learning', 'ai', 'analytics',
-            'dashboard', 'visualization', 'grafana', 'influxdb', 'elasticsearch',
-            'kubernetes', 'docker', 'devops', 'ci/cd', 'agile', 'scrum',
-            'security', 'cybersecurity', 'encryption', 'certificates',
-            'digital transformation', 'industry 4.0', 'smart manufacturing'
-        ]
+            # Keywords adicionales por contexto
+            additional_keywords = []
+            if any(kw in job_lower for kw in ['iot', 'sensors', 'embedded']):
+                additional_keywords.extend(['IoT', 'Sensors', 'Edge Computing'])
+            if any(kw in job_lower for kw in ['cloud', 'aws', 'azure']):
+                additional_keywords.extend(['Cloud Computing', 'AWS', 'DevOps'])
+            if any(kw in job_lower for kw in ['ai', 'machine learning', 'ml']):
+                additional_keywords.extend(['AI', 'Machine Learning', 'Data Science'])
+            
+            # Combinar keywords detectadas
+            customization['detected_keywords'].extend(additional_keywords)
+            customization['detected_keywords'] = list(set(customization['detected_keywords']))  # Remover duplicados
         
-        tech_keywords = [
-            'python', 'javascript', 'typescript', 'react', 'node.js', 'express',
-            'django', 'flask', 'fastapi', 'postgresql', 'mongodb', 'mysql',
-            'redis', 'elasticsearch', 'docker', 'kubernetes', 'aws', 'azure',
-            'gcp', 'terraform', 'ansible', 'jenkins', 'gitlab ci', 'github actions',
-            'microservices', 'apis', 'graphql', 'grpc', 'machine learning',
-            'tensorflow', 'pytorch', 'scikit-learn', 'pandas', 'numpy',
-            'data science', 'analytics', 'big data', 'spark', 'kafka',
-            'linux', 'bash', 'git', 'agile', 'scrum', 'devops', 'sre',
-            'monitoring', 'prometheus', 'grafana', 'elk stack', 'observability'
-        ]
+        return customization
+    
+    def extract_personal_info(self, content):
         
         # Combinar todas las keywords
         all_keywords = iot_keywords + tech_keywords
