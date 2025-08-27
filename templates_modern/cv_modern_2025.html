@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.name }} - CV</title>
+    <style>
+        /* Mejores prácticas CV 2025 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @page {
+            size: A4;
+            margin: 1.5cm;
+        }
+        
+        :root {
+            /* Variables CSS modernas */
+            --primary-color: {{ customization.colors.primary }};
+            --secondary-color: {{ customization.colors.secondary }};
+            --text-primary: #1a1a1a;
+            --text-secondary: #666;
+            --text-light: #888;
+            --background-light: #f8f9fa;
+            --border-light: #e1e5e9;
+            --shadow-subtle: 0 2px 4px rgba(0,0,0,0.08);
+            --shadow-medium: 0 4px 12px rgba(0,0,0,0.12);
+            --radius-small: 6px;
+            --radius-medium: 8px;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 0.75rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+        }
+        
+        body {
+            font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.5;
+            color: var(--text-primary);
+            font-size: 10.5pt;
+            background: white;
+        }
+        
+        .container {
+            max-width: 21cm;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        /* Header moderno con gradiente sutil */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), {{ customization.colors.secondary }});
+            color: white;
+            padding: var(--spacing-xl);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transform: translate(50px, -100px);
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+            letter-spacing: -0.02em;
+        }
+        
+        .header h2 {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            font-weight: 400;
+            margin-bottom: var(--spacing-lg);
+            letter-spacing: 0.01em;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-sm);
+            font-size: 0.9rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            opacity: 0.95;
+        }
+        
+        .contact-icon {
+            width: 16px;
+            height: 16px;
+            opacity: 0.8;
+        }
+        
+        /* Layout moderno con CSS Grid */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: var(--spacing-xl);
+            padding: var(--spacing-xl);
+        }
+        
+        .main-content {
+            min-width: 0; /* Previene overflow */
+        }
+        
+        .sidebar {
+            background: var(--background-light);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-medium);
+            height: fit-content;
+            position: sticky;
+            top: var(--spacing-lg);
+        }
+        
+        /* Secciones optimizadas */
+        .section {
+            margin-bottom: var(--spacing-xl);
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: var(--spacing-xs);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--secondary-color);
+        }
+        
+        /* Perfil profesional destacado */
+        .profile-summary {
+            background: linear-gradient(135deg, var(--background-light), white);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-medium);
+            border-left: 4px solid var(--primary-color);
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: var(--spacing-xl);
+            box-shadow: var(--shadow-subtle);
+        }
+        
+        /* Experiencia con timeline moderna */
+        .experience-item {
+            margin-bottom: var(--spacing-lg);
+            padding-left: var(--spacing-lg);
+            border-left: 2px solid var(--border-light);
+            position: relative;
+        }
+        
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 0;
+            width: 8px;
+            height: 8px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: var(--shadow-subtle);
+        }
+        
+        .company-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--spacing-xs);
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+        }
+        
+        .company {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--text-primary);
+        }
+        
+        .period {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            font-weight: 500;
+            background: var(--background-light);
+            padding: 0.2rem 0.5rem;
+            border-radius: var(--radius-small);
+        }
+        
+        .position {
+            font-weight: 500;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .achievements {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .achievements li {
+            margin-bottom: var(--spacing-xs);
+            padding-left: var(--spacing-md);
+            position: relative;
+            line-height: 1.5;
+        }
+        
+        .achievements li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        /* Skills modernas con categorías visuales */
+        .skills-grid {
+            display: grid;
+            gap: var(--spacing-md);
+        }
+        
+        .skill-category {
+            background: white;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-medium);
+            padding: var(--spacing-md);
+            transition: all 0.2s ease;
+        }
+        
+        .skill-category:hover {
+            box-shadow: var(--shadow-medium);
+            transform: translateY(-1px);
+        }
+        
+        .skill-category h4 {
+            color: var(--secondary-color);
+            margin-bottom: var(--spacing-sm);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+        }
+        
+        .skill-tag {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .skill-tag.highlight {
+            background: var(--secondary-color);
+            font-weight: 600;
+            box-shadow: var(--shadow-subtle);
+        }
+        
+        .skill-tag:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Educación elegante */
+        .education-item {
+            background: white;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-medium);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .degree {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.2rem;
+        }
+        
+        .institution {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+        }
+        
+        .edu-details {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        
+        /* Idiomas con niveles visuales */
+        .languages-grid {
+            display: grid;
+            gap: var(--spacing-sm);
+        }
+        
+        .language-item {
+            background: white;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-medium);
+            padding: var(--spacing-sm);
+            text-align: center;
+        }
+        
+        .language-name {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.2rem;
+        }
+        
+        .language-level {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            background: var(--background-light);
+            padding: 0.2rem 0.5rem;
+            border-radius: var(--radius-small);
+        }
+        
+        /* Keywords destacadas - tendencia 2025 */
+        .keywords-section {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: var(--spacing-md);
+            border-radius: var(--radius-medium);
+            margin-bottom: var(--spacing-lg);
+            text-align: center;
+        }
+        
+        .keywords-title {
+            font-size: 0.8rem;
+            opacity: 0.9;
+            margin-bottom: var(--spacing-xs);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .keywords-list {
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Footer moderno */
+        .footer {
+            text-align: center;
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-md);
+            border-top: 1px solid var(--border-light);
+            color: var(--text-light);
+            font-size: 0.75rem;
+        }
+        
+        /* Responsive para impresión */
+        @media print {
+            .container { 
+                max-width: none; 
+                box-shadow: none;
+            }
+            
+            .main-grid {
+                grid-template-columns: 1fr 280px;
+                gap: var(--spacing-md);
+                padding: var(--spacing-md);
+            }
+            
+            .section { 
+                page-break-inside: avoid; 
+            }
+            
+            .experience-item {
+                page-break-inside: avoid;
+            }
+            
+            .skill-category:hover,
+            .skill-tag:hover {
+                transform: none;
+                box-shadow: none;
+            }
+        }
+        
+        /* Animaciones sutiles para web */
+        @media screen {
+            .section {
+                animation: fadeInUp 0.6s ease-out;
+            }
+            
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-content">
+                <h1>{{ data.name }}</h1>
+                <h2>{{ data.title }}</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        {{ data.email }}
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        {{ data.phone }}
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        {{ data.location }}
+                    </div>
+                    {% if data.linkedin %}
+                    <div class="contact-item">
+                        <span class="contact-icon">💼</span>
+                        {{ data.linkedin }}
+                    </div>
+                    {% endif %}
+                    {% if data.github %}
+                    <div class="contact-item">
+                        <span class="contact-icon">💻</span>
+                        {{ data.github }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        
+        <!-- Keywords Section - Tendencia 2025 -->
+        {% if customization.get('detected_keywords') %}
+        <div class="keywords-section">
+            <div class="keywords-title">Competencias Clave Detectadas</div>
+            <div class="keywords-list">{{ customization.detected_keywords | join(' • ') }}</div>
+        </div>
+        {% endif %}
+        
+        <!-- Perfil Profesional -->
+        {% if data.summary %}
+        <div class="profile-summary">
+            {{ customization.get('summary_prefix', '') }}{{ data.summary }}{{ customization.get('summary_suffix', '') }}
+        </div>
+        {% endif %}
+        
+        <div class="main-grid">
+            <div class="main-content">
+                <!-- Experiencia -->
+                {% if data.experience %}
+                <div class="section">
+                    <h3 class="section-title">Experiencia Profesional</h3>
+                    {% for exp in data.experience %}
+                    <div class="experience-item">
+                        <div class="company-header">
+                            <div class="company">{{ exp.company }}</div>
+                            <div class="period">{{ exp.period }}</div>
+                        </div>
+                        <div class="position">{{ exp.position }}</div>
+                        {% if exp.achievements %}
+                        <ul class="achievements">
+                            {% for achievement in exp.achievements %}
+                            <li>{{ achievement }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                <!-- Educación -->
+                {% if data.education %}
+                <div class="section">
+                    <h3 class="section-title">Educación</h3>
+                    {% for edu in data.education %}
+                    <div class="education-item">
+                        <div class="degree">{{ edu.degree }}</div>
+                        <div class="institution">{{ edu.institution }}</div>
+                        <div class="edu-details">{{ edu.year }} | {{ edu.location }}</div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            
+            <div class="sidebar">
+                <!-- Skills -->
+                {% if data.skills %}
+                <div class="section">
+                    <h3 class="section-title">Competencias</h3>
+                    <div class="skills-grid">
+                        {% for category, skills in data.skills.items() %}
+                        <div class="skill-category">
+                            <h4>{{ category }}</h4>
+                            <div class="skills-list">
+                                {% for skill in skills %}
+                                <span class="skill-tag {% if skill in customization.get('highlight_skills', []) %}highlight{% endif %}">
+                                    {{ skill }}
+                                </span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+                
+                <!-- Idiomas -->
+                {% if data.languages %}
+                <div class="section">
+                    <h3 class="section-title">Idiomas</h3>
+                    <div class="languages-grid">
+                        {% for lang in data.languages %}
+                        <div class="language-item">
+                            <div class="language-name">{{ lang.name }}</div>
+                            <div class="language-level">{{ lang.level }}</div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            Generado automáticamente el {{ generation_date }} | Personalizado para {{ company }} - {{ position }}
+        </div>
+    </div>
+</body>
+</html>
