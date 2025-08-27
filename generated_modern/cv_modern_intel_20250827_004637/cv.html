@@ -1,0 +1,550 @@
+
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CV - Arturo Veras González</title>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            <style>
+                
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #0ea5e9;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --text-light: #888888;
+            --background-light: #f8fafc;
+            --border-light: #e2e8f0;
+            --shadow-subtle: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-medium: 0 4px 6px rgba(0,0,0,0.1);
+            --radius-small: 4px;
+            --radius-medium: 8px;
+            --radius-large: 12px;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 0.75rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-2xl: 3rem;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.5;
+            color: var(--text-primary);
+            background: white;
+            font-size: 13px;
+        }
+        
+        .cv-container {
+            max-width: 21cm;
+            margin: 0 auto;
+            background: white;
+            box-shadow: var(--shadow-medium);
+            min-height: 29.7cm;
+        }
+        
+        /* Header moderno - MÁS COMPACTO */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: var(--spacing-lg) var(--spacing-xl);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transform: translate(50%, -50%);
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .name {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-sm);
+            letter-spacing: -0.02em;
+        }
+        
+        .title {
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin-bottom: var(--spacing-lg);
+            opacity: 0.95;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-lg);
+            font-size: 0.9rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            opacity: 0.95;
+        }
+        
+        .contact-item i {
+            width: 15px;
+            text-align: center;
+        }
+        
+        /* Contenido principal - MEJOR ESPACIADO */
+        .main-content {
+            padding: var(--spacing-xl) var(--spacing-xl);
+        }
+        
+        .section {
+            margin-bottom: var(--spacing-lg);
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: var(--spacing-xs);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--secondary-color);
+        }
+        
+        /* Perfil profesional - ESPACIADO MEJORADO */
+        .profile-summary {
+            background: linear-gradient(135deg, var(--background-light), white);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-medium);
+            border-left: 4px solid var(--primary-color);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: var(--spacing-xl);
+            box-shadow: var(--shadow-subtle);
+        }
+        
+        /* Experiencia - ESPACIADO MEJORADO */
+        .experience-item {
+            margin-bottom: var(--spacing-lg);
+            padding-left: var(--spacing-lg);
+            border-left: 2px solid var(--border-light);
+            position: relative;
+        }
+        
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 0;
+            width: 8px;
+            height: 8px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: var(--shadow-subtle);
+        }
+        
+        .company-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--spacing-sm);
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+        }
+        
+        .company {
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .position {
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .period {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            font-weight: 500;
+            background: var(--background-light);
+            padding: 0.2rem 0.5rem;
+            border-radius: var(--radius-small);
+        }
+        
+        .description {
+            margin: var(--spacing-sm) 0;
+            color: var(--text-secondary);
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        
+        .achievements {
+            list-style: none;
+            margin-top: var(--spacing-sm);
+        }
+        
+        .achievements li {
+            margin-bottom: var(--spacing-sm);
+            padding-left: var(--spacing-md);
+            position: relative;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .achievements li::before {
+            content: '▸';
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Skills grid moderno */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        
+        .skill-category {
+            background: var(--background-light);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-medium);
+            border-top: 3px solid var(--primary-color);
+        }
+        
+        .skill-category h4 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: var(--spacing-sm);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+        }
+        
+        .skill-tag {
+            background: white;
+            color: var(--text-primary);
+            padding: 0.25rem 0.5rem;
+            border-radius: var(--radius-small);
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid var(--border-light);
+            transition: all 0.2s ease;
+        }
+        
+        .skill-tag.highlight {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        /* Educación */
+        .education-item {
+            background: var(--background-light);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-medium);
+            margin-bottom: var(--spacing-md);
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .degree {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .institution {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        /* Certificaciones */
+        .certifications-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-sm);
+        }
+        
+        .certification-item {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--radius-medium);
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        
+        /* Keywords detectadas */
+        .detected-keywords {
+            margin-top: var(--spacing-lg);
+            padding: var(--spacing-md);
+            background: linear-gradient(135deg, var(--background-light), white);
+            border-radius: var(--radius-medium);
+            border: 1px solid var(--border-light);
+        }
+        
+        .keywords-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: var(--spacing-sm);
+            font-size: 0.9rem;
+        }
+        
+        .keywords-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+        }
+        
+        .keyword-tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: var(--radius-small);
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        /* Responsive design */
+        @media print {
+            .cv-container {
+                box-shadow: none;
+                margin: 0;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: var(--spacing-lg);
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+            
+            .main-content {
+                padding: var(--spacing-lg);
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: var(--spacing-sm);
+            }
+            
+            .company-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+            </style>
+        </head>
+        <body>
+            <div class="cv-container">
+                <!-- Header -->
+                <header class="header">
+                    <div class="header-content">
+                        <h1 class="name">Arturo Veras González</h1>
+                        <div class="title">Ingeniero de Software • Especialista en IoT • Desarrollador Full Stack</div>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>arturoveras93@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+56 9 5516 2574</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Santiago, Chile</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <span>linkedin.com/in/arturo-veras</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-github"></i>
+                                <span>github.com/arturoveras</span>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                
+                <!-- Contenido Principal -->
+                <main class="main-content">
+                    <!-- Resumen Profesional -->
+                    <section class="section">
+                        <h2 class="section-title">Perfil Profesional</h2>
+                        <div class="profile-summary">
+                            Especialista enfocado en el rol de Embedded Engineer en Intel. Ingeniero especializado en desarrollo de sistemas IoT y aplicaciones web modernas, 
+        con experiencia comprobada en la implementación de soluciones tecnológicas escalables. 
+        Experto en Python, JavaScript, AWS y arquitecturas de microservicios, con enfoque en 
+        optimización de rendimiento y experiencia de usuario.
+                        </div>
+                    </section>
+                    
+                    <!-- Experiencia Laboral -->
+                    <section class="section">
+                        <h2 class="section-title">Experiencia Laboral</h2>
+                        
+            <div class="experience-item">
+                <div class="company-header">
+                    <div>
+                        <div class="company">UQOMM</div>
+                        <div class="position">Ingeniero de Software Senior</div>
+                    </div>
+                    <div class="period">Enero 2023 - Presente</div>
+                </div>
+                <div class="description">Desarrollo de sistemas IoT para monitoreo ambiental y optimización de procesos industriales.</div>
+                <ul class='achievements'><li>Implementé sistema de monitoreo en tiempo real que redujo costos operacionales en 30%</li><li>Desarrollé API REST escalable manejando 10K+ requests/hora</li><li>Lideré migración a arquitectura de microservicios en AWS</li></ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="company-header">
+                    <div>
+                        <div class="company">BlackGPS</div>
+                        <div class="position">Desarrollador Full Stack</div>
+                    </div>
+                    <div class="period">Marzo 2021 - Diciembre 2022</div>
+                </div>
+                <div class="description">Desarrollo de plataforma de geolocalización y análisis de datos vehiculares.</div>
+                <ul class='achievements'><li>Desarrollé dashboard interactivo con React y D3.js</li><li>Optimicé consultas SQL reduciendo tiempo de respuesta 60%</li><li>Implementé sistema de notificaciones en tiempo real</li></ul>
+            </div>
+            
+                    </section>
+                    
+                    <!-- Habilidades Técnicas -->
+                    <section class="section">
+                        <h2 class="section-title">Habilidades Técnicas</h2>
+                        <div class="skills-grid">
+                            
+            <div class="skill-category">
+                <h4>Lenguajes de Programación</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag ">Python</span><span class="skill-tag ">JavaScript</span><span class="skill-tag ">TypeScript</span><span class="skill-tag ">Java</span><span class="skill-tag ">C++</span><span class="skill-tag ">SQL</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Frameworks & Librerías</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag ">React</span><span class="skill-tag ">Node.js</span><span class="skill-tag ">Django</span><span class="skill-tag ">FastAPI</span><span class="skill-tag ">Express</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Cloud & DevOps</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag ">AWS</span><span class="skill-tag ">Docker</span><span class="skill-tag ">Kubernetes</span><span class="skill-tag ">Terraform</span><span class="skill-tag ">Jenkins</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Bases de Datos</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag ">PostgreSQL</span><span class="skill-tag ">MongoDB</span><span class="skill-tag ">Redis</span><span class="skill-tag ">InfluxDB</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h4>IoT & Hardware</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag ">MQTT</span><span class="skill-tag ">LoRaWAN</span><span class="skill-tag ">Raspberry Pi</span><span class="skill-tag ">Arduino</span><span class="skill-tag ">Sensors</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Herramientas</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag ">Git</span><span class="skill-tag ">Linux</span><span class="skill-tag ">Nginx</span><span class="skill-tag ">Grafana</span><span class="skill-tag ">Prometheus</span>
+                </div>
+            </div>
+            
+                        </div>
+                    </section>
+                    
+                    <!-- Educación -->
+                    <section class="section">
+                        <h2 class="section-title">Educación</h2>
+                        
+            <div class="education-item">
+                <div class="degree">Ingeniería en Informática</div>
+                <div class="institution">Universidad Nacional</div>
+                <div class="period">2016-2020</div>
+                <div class="details">Especialización en Sistemas Distribuidos y Arquitecturas de Software</div>
+            </div>
+            
+                    </section>
+                    
+                    <!-- Certificaciones -->
+                    <section class="section">
+                        <h2 class="section-title">Certificaciones</h2>
+                        <div class="certifications-list">
+                            <div class="certification-item">AWS Certified Solutions Architect</div><div class="certification-item">IoT Specialist Certification</div><div class="certification-item">Scrum Master Certified</div>
+                        </div>
+                    </section>
+                    
+                    
+            <div class="detected-keywords">
+                <div class="keywords-title">Tecnologías Relevantes Detectadas</div>
+                <div class="keywords-tags">
+                    <span class="keyword-tag">IoT</span><span class="keyword-tag">Embedded Systems</span><span class="keyword-tag">Hardware</span>
+                </div>
+            </div>
+            
+                </main>
+            </div>
+        </body>
+        </html>
+        
