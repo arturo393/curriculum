@@ -56,6 +56,14 @@ class CVGenerator:
                     "emphasis": ["industrial protocols", "harsh environments", "24/7 operations"],
                     "culture": ["safety first", "operational excellence", "sustainability"]
                 }
+            },
+            "consultancy_companies": {
+                "globant": {
+                    "keywords": ["digital transformation", "iot edge", "embedded systems", "microcontrollers", "rtos"],
+                    "emphasis": ["c++", "python", "embedded systems", "linux", "cross-compilation", "agile"],
+                    "culture": ["innovation", "collaboration", "client success", "technical excellence"],
+                    "specific_tech": ["STM32", "ARM", "FreeRTOS", "I2C", "SPI", "PWM", "DMA", "cmake", "git"]
+                }
             }
         }
     
@@ -98,14 +106,30 @@ class CVGenerator:
         elif "tesla" in company.lower():
             return f"{base_profile}, especializado en sistemas críticos de tiempo real para aplicaciones automotrices. Experto en sistemas embebidos safety-critical, protocolos automotrices y desarrollo de firmware para vehículos autónomos. Enfocado en innovación sostenible y iteración rápida."
         
+        elif "globant" in company.lower():
+            if template_type == "iot":
+                return f"{base_profile}, especializado en desarrollo IoT Edge y sistemas embebidos para transformación digital empresarial. Expert-level en C++, microcontroladores ARM/STM32, RTOS (FreeRTOS), y desarrollo cross-platform con Linux embebido. Experiencia sólida en periféricos SoC (I2C, SPI, QSPI, ADC, PWM, DMA), Python para automatización, y metodologías Agile. Enfocado en entregar productos digitales escalables que conectan negocios y consumidores mediante tecnología de vanguardia."
+            else:
+                return f"{base_profile}, especializado en desarrollo IoT Edge y sistemas embebidos. Expert-level en C++, microcontroladores, RTOS y desarrollo cross-platform con Linux embebido. Experiencia en periféricos SoC, Python, y metodologías Agile para transformación digital."
+        
         else:
             return f"{base_profile}, con track record desarrollando soluciones innovadoras para {company}. Especializado en tecnologías de vanguardia con enfoque en excelencia técnica y resultados medibles."
     
     def create_customized_template(self, template_type, company, position, output_path):
         """Crea template personalizado con configuración específica"""
         
+        # Mapear nombres de templates
+        template_mapping = {
+            "iot": "cv_iot_specialist.tex",
+            "firmware": "cv_firmware_developer.tex", 
+            "software": "cv_software_developer.tex",
+            "lead": "cv_technical_lead.tex",
+            "startup": "cv_startup_entrepreneur.tex"
+        }
+        
         # Leer template base
-        template_file = self.templates_dir / "specialized" / f"cv_{template_type}.tex"
+        template_filename = template_mapping.get(template_type, f"cv_{template_type}.tex")
+        template_file = self.templates_dir / "specialized" / template_filename
         
         if not template_file.exists():
             raise FileNotFoundError(f"Template no encontrado: {template_file}")
