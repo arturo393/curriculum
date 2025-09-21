@@ -5,6 +5,50 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2025-09-21 🎉
+
+### 🚀 REFACTORIZACIÓN COMPLETA - ARQUITECTURA MODERNA
+
+#### Added
+- ✨ **CLI Unificada**: Comando `cv-suite` que reemplaza múltiples scripts
+- 🏗️ **Arquitectura Modular**: Estructura `src/{core,generators,utils,cli}`
+- 🎨 **Sistema Inteligente de Colores**: Predicción automática basada en psicología empresarial
+- 📊 **5 Generadores Modernos**: HTML, Compact, Markdown, LaTeX, ReportLab Avanzado
+- 🔧 **Módulos Core**: DataParser, ColorSystem, GeneratorBase con inheritance
+- 📚 **Documentación Consolidada**: Guías organizadas en `docs/guides/`
+- 🧪 **Tests Organizados**: Estructura de testing modular
+- 🎯 **Registry Pattern**: Sistema extensible para nuevos generadores
+
+#### Changed
+- 🗂️ **Estructura Reorganizada**: De 26+ archivos Python en root → arquitectura limpia
+- 🖥️ **Interfaz Modernizada**: Modo interactivo con selección guiada
+- 🎨 **Generación Mejorada**: Integración con sistema de colores inteligente
+- 📈 **Performance**: Validación de dependencias y manejo de errores mejorado
+
+#### Removed
+- 🧹 **Scripts Legacy**: Eliminados 6+ scripts duplicados y obsoletos
+- 📄 **Documentación Fragmentada**: Consolidada de 8+ archivos dispersos
+- ⚠️ **Código Duplicado**: Funcionalidad unificada en módulos core
+
+#### Migration Guide
+```bash
+# Antes (múltiples scripts)
+python cv_suite_2025.py
+python generate_cv_modern_fixed.py
+
+# Ahora (comando unificado)
+./cv-suite interactive
+./cv-suite generate html "Google" "Software Engineer"
+```
+
+### 📊 Estadísticas
+- **51 archivos modificados**: +4,884 insertions, -6,949 deletions
+- **5 generadores funcionales**: HTML, Compact, Markdown, LaTeX, ReportLab
+- **3 módulos core**: Parsing, Color System, Base Generator
+- **Arquitectura moderna**: Siguiendo mejores prácticas de ingeniería de software
+
+---
+
 ## [1.1.0] - 2025-06-03
 
 ### Added
