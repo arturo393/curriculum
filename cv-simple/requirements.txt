@@ -1,0 +1,5 @@
+# CV Simple HTML - No external dependencies required
+# Solo usa Python standard library
+# 
+# Para generar CV: python3 generate-cv.py
+# Para exportar a PDF: abrir HTML en navegador y usar Ctrl+P

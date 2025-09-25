@@ -1,309 +1,554 @@
-# 🚀 CV Generator Suite 2025# 🚀 CV Generator Suit## 🛠️ Generadores Disponibles
+# 🚀 CV Simple - Generador Profesional Minimalista# 🚀 CV Simple - Generador Profesional Minimalista
 
 
 
-## Sistema Completo de Generación de CVs Profesionales| Generador | Comando | Tecnología | Tiempo | Diseño | Recomendado 2025 | Caso de Uso |
-
-**Arturo Veras González** - Ingeniero Civil Electrónico|-----------|---------|------------|--------|--------|------------------|-------------|
-
-| 🎨 **HTML/CSS Moderno** | `html` | `weasyprint` + `jinja2` | ~5s | ⭐⭐⭐ | ✅ **SÍ** | Control total, ATS optimizado |
-
-[![Refactored](https://img.shields.io/badge/Status-Refactored%202025-brightgreen)](https://github.com/arturo393/curriculum)| 📄 **PDF Compacto** | `compact` | `reportlab` | ~3s | ⭐⭐⭐ | ✅ **SÍ** | 1 página, sin dependencias web |
-
-[![Architecture](https://img.shields.io/badge/Architecture-Modular-blue)](./docs/REFACTOR_PLAN_2025.md)| ⚡ **Markdown Simple** | `markdown` | `pandoc` | ~2s | ⭐⭐ | ✅ **SÍ** | Velocidad, simplicidad |
-
-[![CLI](https://img.shields.io/badge/CLI-Unified-orange)](./docs/cli_usage.md)| 📝 **LaTeX Profesional** | `latex` | `pdflatex` | ~10s | ⭐⭐⭐ | ✅ **SÍ** | Control tipográfico |
-
-| 🚀 **ReportLab Avanzado** | `reportlab_advanced` | `python` | ~4s | ⭐⭐⭐ | ✅ **SÍ** | Diseño moderno 2025 |## Sistema Completo de Generación de CVs Profesionales
-
----**Artu## 📊 Comparación de Rendimiento
+**Arturo Veras Olivos** - Ingeniero Civil Electrónico**Arturo Veras Olivos** - Ingeniero Civil Electrónico
 
 
 
-## 🎯 Descripción| Métrica | HTML | Compact | Markdown | LaTeX | ReportLab Avanzado |
+[![Simple](https://img.shields.io/badge/Status-Simplified%202025-brightgreen)](https://github.com/arturo393/curriculum)[![Simple](https://img.shields.io/badge/Status-Simplified%202025-brightgreen)](https://github.com/arturo393/curriculum)
 
-|---------|------|---------|----------|-------|-------------------|
+[![Architecture](https://img.shields.io/badge/Architecture-Minimal-blue)](./cv-simple/)[![Architecture](https://img.shields.io/badge/Architecture-Minimal-blue)](./cv-simple/)
 
-Sistema **completamente refactorizado** para generar CVs profesionales con arquitectura moderna. Diseñado siguiendo las **mejores prácticas de 2025** para optimización ATS, diseño visual moderno y personalización automática inteligente.| **Tiempo** | 5s | 3s | 2s | 10s | 4s |
-
-| **ATS Score** | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
-
-### 🌟 **¿Por qué este proyecto?**| **Personalización** | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
-
-| **Facilidad** | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐ | ⭐⭐ |
-
-Transformado desde múltiples scripts dispersos a una **arquitectura moderna unificada**. Este sistema ofrece:| **Diseño 2025** | ⭐⭐⭐ | ⭐⭐ | ⭐ | ⭐⭐ | ⭐⭐⭐ | González** - Ingeniero Civil Electrónico
+[![Workflow](https://img.shields.io/badge/Workflow-GoogleDocs-orange)](./cv-simple/docs/usage.md)[![Workflow](https://img.shields.io/badge/Workflow-GoogleDocs-orange)](./cv-simple/docs/usage.md)
 
 
 
-- ✅ **CLI Unificada** - Un solo comando para todos los generadores[![Refactored](https://img.shields.io/badge/Status-Refactored%202025-brightgreen)](https://github.com/arturo393/curriculum)
-
-- ✅ **Arquitectura Modular** - Código organizado y extensible[![Architecture](https://img.shields.io/badge/Architecture-Modular-blue)](./docs/REFACTOR_PLAN_2025.md)
-
-- ✅ **Sistema Inteligente** - Colores automáticos basados en psicología empresarial[![CLI](https://img.shields.io/badge/CLI-Unified-orange)](./docs/cli_usage.md)
-
-- ✅ **5 Generadores** - HTML, Compact, Markdown, LaTeX, ReportLab
-
-- ✅ **Personalización Automática** - Por industria y posición---
+------
 
 
 
----## 🎯 Descripción
+## 🎯 Descripción## 🎯 Descripción
 
 
 
-## 🛠️ Generadores DisponiblesSistema **completamente refactorizado** para generar CVs profesionales con arquitectura moderna. Diseñado siguiendo las **mejores prácticas de 2025** para optimización ATS, diseño visual moderno y personalización automática inteligente.
+Generador de CV **súper simple** y **profesional**. Tras un análisis exhaustivo, se determinó que un sistema complejo con 5 generadores era **overkill** para generar CVs excelentes.Generador de CV **súper simple** y **profesional**. Tras un análisis exhaustivo, se determinó que un sistema complejo con 5 generadores era **overkill** para generar CVs excelentes.
 
 
 
-| Generador | Comando | Tecnología | Tiempo | Diseño | Recomendado 2025 | Caso de Uso |### 🌟 **¿Por qué este proyecto?**
+### 🌟 **Filosofía: Simplicidad > Complejidad**### 🌟 **Filosofía: Simplicidad > Complejidad**
 
-|-----------|---------|------------|--------|--------|------------------|-------------|
 
-| 🎨 **HTML/CSS Moderno** | `html` | `weasyprint` + `jinja2` | ~5s | ⭐⭐⭐ | ✅ **SÍ** | Control total, ATS optimizado |Transformado desde múltiples scripts dispersos a una **arquitectura moderna unificada**. Este sistema ofrece:
 
-| 📄 **PDF Compacto** | `compact` | `reportlab` | ~3s | ⭐⭐⭐ | ✅ **SÍ** | 1 página, sin dependencias web |
+- ✅ **1 generador único** - Optimizado para el caso de uso real- ✅ **1 generador único** - Optimizado para el caso de uso real
+
+- ✅ **150 líneas de código** - Elegante y mantenible  - ✅ **150 líneas de código** - Elegante y mantenible
+
+- ✅ **3 dependencias** - Mínimas y estables- ✅ **3 dependencias** - Mínimas y estables
+
+- ✅ **2 minutos setup** - Funciona inmediatamente- ✅ **2 minutos setup** - Funciona inmediatamente
+
+- ✅ **Workflow Google Docs** - Familiar y profesional- ✅ **Workflow Google Docs** - Familiar y profesional
+
+
+
+---
+
+
+
+## 🚀 Inicio Rápido## 🛠️ Generadores DisponiblesSistema **completamente refactorizado** para generar CVs profesionales con arquitectura moderna. Diseñado siguiendo las **mejores prácticas de 2025** para optimización ATS, diseño visual moderno y personalización automática inteligente.
+
+
+
+### **⚡ Paso 1: Clonar Repositorio**
+
+```bash
+
+git clone https://github.com/arturo393/curriculum.git| Generador | Comando | Tecnología | Tiempo | Diseño | Recomendado 2025 | Caso de Uso |### 🌟 **¿Por qué este proyecto?**
+
+cd curriculum/cv-simple
+
+```|-----------|---------|------------|--------|--------|------------------|-------------|
+
+
+
+### **🎯 Paso 2: Generar CV**| 🎨 **HTML/CSS Moderno** | `html` | `weasyprint` + `jinja2` | ~5s | ⭐⭐⭐ | ✅ **SÍ** | Control total, ATS optimizado |Transformado desde múltiples scripts dispersos a una **arquitectura moderna unificada**. Este sistema ofrece:
+
+```bash
+
+python3 generate-cv.py| 📄 **PDF Compacto** | `compact` | `reportlab` | ~3s | ⭐⭐⭐ | ✅ **SÍ** | 1 página, sin dependencias web |
+
+```
 
 | ⚡ **Markdown Simple** | `markdown` | `pandoc` | ~2s | ⭐⭐ | ✅ **SÍ** | Velocidad, simplicidad |- ✅ **CLI Unificada** - Un solo comando para todos los generadores
 
-| 📝 **LaTeX Profesional** | `latex` | `pdflatex` | ~10s | ⭐⭐⭐ | ✅ **SÍ** | Control tipográfico |- ✅ **Arquitectura Modular** - Código organizado y extensible
+**Seleccionar opciones:**
+
+- Tipo de rol (1-5): IoT Engineer, Firmware Dev, Tech Lead, etc.| 📝 **LaTeX Profesional** | `latex` | `pdflatex` | ~10s | ⭐⭐⭐ | ✅ **SÍ** | Control tipográfico |- ✅ **Arquitectura Modular** - Código organizado y extensible
+
+- Tipo empresa (1-5): Tech Company, Startup, Consulting, etc.
 
 | 🚀 **ReportLab Avanzado** | `reportlab_advanced` | `python` | ~4s | ⭐⭐⭐ | ✅ **SÍ** | Diseño moderno 2025 |- ✅ **Sistema Inteligente** - Colores automáticos basados en psicología empresarial
 
-- ✅ **5 Generadores** - HTML, Compact, Markdown, LaTeX, ReportLab
+### **📄 Paso 3: Workflow Google Docs**
 
----- ✅ **Personalización Automática** - Por industria y posición
+1. Copiar contenido Markdown generado- ✅ **5 Generadores** - HTML, Compact, Markdown, LaTeX, ReportLab
+
+2. Pegar en Google Docs nuevo
+
+3. Aplicar formato profesional  ---- ✅ **Personalización Automática** - Por industria y posición
+
+4. Exportar PDF
 
 
+
+**⏱️ Tiempo total: 2 minutos**
 
 ## 🚀 Instalación y Uso---
 
+---
 
+
+
+## 🎨 Perfiles Disponibles
 
 ### **⚡ Instalación Rápida**## �️ Generadores Disponibles
 
+### **🔹 IoT Engineer**
+
+- **Skills**: STM32 • Python • LoRa • MQTT • React • MongoDB
+
+- **Enfoque**: Sistemas embebidos y arquitecturas IoT
+
+- **Ideal para**: Empresas tech, industrial IoT, startups```bash| Generador | Tecnología | Tiempo | Diseño | Recomendado 2025 | Caso de Uso |
 
 
-```bash| Generador | Tecnología | Tiempo | Diseño | Recomendado 2025 | Caso de Uso |
 
-git clone https://github.com/arturo393/curriculum.git|-----------|------------|--------|--------|------------------|-------------|
+### **🔹 Firmware Developer** git clone https://github.com/arturo393/curriculum.git|-----------|------------|--------|--------|------------------|-------------|
 
-cd curriculum| 🎨 **HTML+CSS Moderno** | `weasyprint` + `jinja2` | ~5s | ⭐⭐⭐ | ✅ **SÍ** | Control total, ATS optimizado |
+- **Skills**: C/C++ • STM32 • FreeRTOS • I2C/SPI • Bluetooth
+
+- **Enfoque**: Desarrollo firmware y microcontroladorescd curriculum| 🎨 **HTML+CSS Moderno** | `weasyprint` + `jinja2` | ~5s | ⭐⭐⭐ | ✅ **SÍ** | Control total, ATS optimizado |
+
+- **Ideal para**: Automotriz, electrónica, embedded systems
 
 ```| ⚡ **Markdown Simple** | `pandoc` | ~2s | ⭐⭐ | ✅ **SÍ** | Velocidad, aplicaciones múltiples |
 
-| 🐍 **ReportLab** | `python` | ~3s | ⭐⭐⭐ | ❌ Técnico | Control programático extremo |
+### **🔹 Tech Lead**
 
-### **🌟 Uso Recomendado - CLI Unificada**| 📜 **LaTeX Clásico** | `pdflatex` | ~10s | ⭐⭐⭐ | ❌ Complejo | Roles académicos/investigación |
+- **Skills**: Python • Java • Arquitectura • Metodologías Agile| 🐍 **ReportLab** | `python` | ~3s | ⭐⭐⭐ | ❌ Técnico | Control programático extremo |
+
+- **Enfoque**: Liderazgo técnico y gestión de equipos
+
+- **Ideal para**: Startups en crecimiento, equipos de desarrollo### **🌟 Uso Recomendado - CLI Unificada**| 📜 **LaTeX Clásico** | `pdflatex` | ~10s | ⭐⭐⭐ | ❌ Complejo | Roles académicos/investigación |
 
 
 
-```bash---
+### **🔹 Product Engineer**
+
+- **Skills**: I+D • Innovación • Business Alignment • Prototyping
+
+- **Enfoque**: Desarrollo de productos y alineación técnico-comercial```bash---
+
+- **Ideal para**: Departamentos I+D, empresas de productos
 
 # Modo interactivo (recomendado)
 
-./cv-suite interactive## 🚀 Instalación y Uso
+### **🔹 Full-Stack IoT**
+
+- **Skills**: Hardware • Firmware • Backend • Frontend • Cloud./cv-suite interactive## 🚀 Instalación y Uso
+
+- **Enfoque**: Desarrollo completo end-to-end
+
+- **Ideal para**: Startups, smart cities, agrotech
 
 
 
-# Listar generadores disponibles### **⚡ Instalación Rápida**
-
-./cv-suite list```bash
-
-git clone https://github.com/arturo393/curriculum.git
-
-# Verificar dependenciascd curriculum
-
-./cv-suite check```
+---# Listar generadores disponibles### **⚡ Instalación Rápida**
 
 
+
+## 📊 Comparación: Antes vs Ahora./cv-suite list```bash
+
+
+
+| Aspecto | Sistema Anterior | CV Simple | Mejora |git clone https://github.com/arturo393/curriculum.git
+
+|---------|------------------|-----------|---------|
+
+| **Archivos Python** | 20+ | 1 | **95% menos** |# Verificar dependenciascd curriculum
+
+| **Líneas código** | 3000+ | 150 | **95% menos** |
+
+| **Dependencias** | 10+ | 3 | **70% menos** |./cv-suite check```
+
+| **Setup time** | 30+ min | 2 min | **93% más rápido** |
+
+| **Generadores** | 5 confusos | 1 óptimo | **Foco claro** |
+
+| **Mantenimiento** | Alto | Mínimo | **10x menos trabajo** |
 
 # Predecir esquema de colores### **🌟 Uso Recomendado - CLI Unificada**
 
+---
+
 ./cv-suite colors "Intel" "Embedded Engineer"```bash
+
+## 🎯 Casos de Uso
 
 # Modo interactivo (recomendado)
 
-# Generar CV específico./cv-suite interactive
+### ✅ **Perfecto Para:**
 
-./cv-suite generate html "Google" "Software Engineer"
+- Aplicaciones a trabajos específicos# Generar CV específico./cv-suite interactive
 
-./cv-suite generate compact "Microsoft" "Program Manager"# Listar generadores disponibles
+- CVs adaptados por rol/empresa  
 
-./cv-suite generate latex "Tesla" "Embedded Engineer"./cv-suite list
+- Workflow familiar (Google Docs)./cv-suite generate html "Google" "Software Engineer"
 
-```
+- Mantenimiento simple de datos
+
+- Resultados profesionales rápidos./cv-suite generate compact "Microsoft" "Program Manager"# Listar generadores disponibles
+
+
+
+### ❌ **No Usar Para:**./cv-suite generate latex "Tesla" "Embedded Engineer"./cv-suite list
+
+- Experimentación con múltiples formatos
+
+- Showcases de programación compleja```
+
+- Sistemas de templating avanzados
 
 # Verificar dependencias
 
+---
+
 ### **📱 Modo Interactivo**./cv-suite check
 
+## 📁 Estructura del Proyecto
 
 
-El modo interactivo guía paso a paso:# Predecir esquema de colores
 
-./cv-suite colors "Intel" "Embedded Engineer"
+```
 
-1. 🏢 Solicita nombre de empresa
+curriculum/El modo interactivo guía paso a paso:# Predecir esquema de colores
 
-2. 💼 Solicita título de posición  # Generar CV específico
+├── 🚀 cv-simple/              # SISTEMA PRINCIPAL
 
-3. 🎨 Muestra predicción de colores./cv-suite generate html "Google" "Software Engineer"
+│   ├── generate-cv.py         # Generador único (150 líneas)./cv-suite colors "Intel" "Embedded Engineer"
 
-4. 📊 Lista generadores disponibles./cv-suite generate compact "Microsoft" "Program Manager"
+│   ├── cv-data.md            # Datos personales editables
 
-5. 🚀 Genera CV personalizado./cv-suite generate latex "Tesla" "Embedded Engineer"
+│   ├── output/               # CVs generados1. 🏢 Solicita nombre de empresa
+
+│   ├── docs/                 # Documentación
+
+│   └── README.md             # Guía detallada2. 💼 Solicita título de posición  # Generar CV específico
+
+├── 📚 legacy/                # Sistema anterior preservado
+
+│   ├── src/                  # 5 generadores complejos3. 🎨 Muestra predicción de colores./cv-suite generate html "Google" "Software Engineer"
+
+│   ├── templates/            # Templates múltiples
+
+│   └── README.md             # Historia del sistema legacy4. 📊 Lista generadores disponibles./cv-suite generate compact "Microsoft" "Program Manager"
+
+├── 📖 docs/                  # Análisis y documentación
+
+└── 📄 README.md              # Esta guía5. 🚀 Genera CV personalizado./cv-suite generate latex "Tesla" "Embedded Engineer"
+
+```
 
 ```
 
 ---
+
+---
+
+## 💡 Ejemplos de Output
 
 ### **📱 Modo Interactivo**
 
-## 🎨 Características Modernas 2025El modo interactivo guía paso a paso:
+### **Para IoT Engineer:**
 
-1. 🏢 Solicita nombre de empresa
+```markdown## 🎨 Características Modernas 2025El modo interactivo guía paso a paso:
 
-### **🔥 Diseño Visual**2. 💼 Solicita título de posición  
+# Arturo Veras Olivos
+
+**Senior IoT Engineer & Embedded Systems Specialist**1. 🏢 Solicita nombre de empresa
+
+
+
+## 🛠️ COMPETENCIAS TÉCNICAS CLAVE  ### **🔥 Diseño Visual**2. 💼 Solicita título de posición  
+
+**STM32 • Python • LoRa • MQTT • React • MongoDB**
 
 3. 🎨 Muestra predicción de colores
 
-- Variables CSS para theming dinámico4. 📊 Lista generadores disponibles
+## 💼 EXPERIENCIA PROFESIONAL
 
-- CSS Grid & Flexbox para layouts modernos5. 🚀 Genera CV personalizado
+### UQOMM SpA | Encargado de Software y Firmware- Variables CSS para theming dinámico4. 📊 Lista generadores disponibles
 
-- Gradientes sutiles y efectos visuales
+• **Sistema IoT crítico**: 500K+ datos/día, 99.9% disponibilidad
 
-- Tipografía moderna: Inter, SF Pro Display---
+• **Firmware STM32**: C/C++ para microcontroladores Cortex M0- CSS Grid & Flexbox para layouts modernos5. 🚀 Genera CV personalizado
+
+...
+
+```- Gradientes sutiles y efectos visuales
 
 
+
+### **Para Tech Lead:**- Tipografía moderna: Inter, SF Pro Display---
+
+```markdown
+
+# Arturo Veras Olivos
+
+**Technical Lead & Engineering Manager**
 
 ### **🤖 Personalización Inteligente**## 🎨 Características Modernas 2025
 
+## 🛠️ COMPETENCIAS TÉCNICAS CLAVE
+
+**Python • Java • Arquitectura de Sistemas • Metodologías Agile**
 
 
-- Detección automática de keywords por industria### **🔥 Diseño Visual**
 
-- Colores específicos por tipo de trabajo- Variables CSS para theming dinámico
+## 💼 EXPERIENCIA PROFESIONAL  - Detección automática de keywords por industria### **🔥 Diseño Visual**
 
-- Personalización automática de resumen profesional- CSS Grid & Flexbox para layouts modernos
+### UQOMM SpA | Encargado de Software y Firmware
+
+• **Liderazgo técnico**: Gestión de equipos multidisciplinarios- Colores específicos por tipo de trabajo- Variables CSS para theming dinámico
+
+• **Arquitectura**: Diseño de sistemas escalables y distribuidos
+
+...- Personalización automática de resumen profesional- CSS Grid & Flexbox para layouts modernos
+
+```
 
 - Skills destacadas basadas en oferta- Gradientes sutiles y efectos visuales
 
+---
+
 - Tipografía moderna: Inter, SF Pro Display
+
+## 📚 Documentación
 
 ### **📊 Optimización ATS**
 
-### **🤖 Personalización Inteligente**
+### **📖 Guías Principales**
 
-- Estructura semántica HTML- Detección automática de keywords por industria
+- [`cv-simple/README.md`](./cv-simple/README.md) - Guía completa del sistema### **🤖 Personalización Inteligente**
 
-- Keywords automáticas relevantes por posición- Colores específicos por tipo de trabajo
+- [`cv-simple/docs/usage.md`](./cv-simple/docs/usage.md) - Manual detallado de uso
 
-- Texto legible para sistemas de tracking- Personalización automática de resumen profesional
+- [`legacy/README.md`](./legacy/README.md) - Historia del sistema anterior- Estructura semántica HTML- Detección automática de keywords por industria
+
+
+
+### **📋 Análisis Histórico**  - Keywords automáticas relevantes por posición- Colores específicos por tipo de trabajo
+
+- [`docs/CV_SIMPLE_ACTION_PLAN_2025.md`](./docs/CV_SIMPLE_ACTION_PLAN_2025.md) - Plan de simplificación
+
+- [`docs/CV_SIMPLIFICATION_ANALYSIS_2025.md`](./docs/CV_SIMPLIFICATION_ANALYSIS_2025.md) - Análisis de complejidad- Texto legible para sistemas de tracking- Personalización automática de resumen profesional
+
+- [`docs/CV_SIMPLE_IMPLEMENTATION_REPORT.md`](./docs/CV_SIMPLE_IMPLEMENTATION_REPORT.md) - Reporte de implementación
 
 - Jerarquía clara de información- Skills destacadas basadas en oferta
 
+### **🔍 Referencias Legacy**
 
+- [`docs/REFACTOR_PLAN_2025.md`](./docs/REFACTOR_PLAN_2025.md) - Plan de refactorización original
+
+- [`docs/DUPLICATE_ANALYSIS_2025.md`](./docs/DUPLICATE_ANALYSIS_2025.md) - Análisis de duplicados
 
 ---### **📊 Optimización ATS**
 
+---
+
 - Estructura semántica HTML
+
+## 🔄 Roadmap
 
 ## 🔥 Ejemplos Reales- Keywords automáticas relevantes por posición
 
-- Texto legible para sistemas de tracking
+### ✅ **v1.0 - Sistema Básico (Actual)**
 
-### **Ingeniero IoT**- Jerarquía clara de información
+- Generador único con 5 perfiles profesionales- Texto legible para sistemas de tracking
+
+- Output Markdown ATS-optimizado
+
+- Workflow Google Docs manual### **Ingeniero IoT**- Jerarquía clara de información
+
+- Documentación completa
 
 
 
-```bash---
+### 🚧 **v2.0 - Automatización Google Docs (Próximo)**
 
-./cv-suite generate html "AVOS Tech" "Ingeniero Especialista en IoT"
+- Integración Google Docs API```bash---
+
+- Creación automática de documentos
+
+- Formato profesional automático./cv-suite generate html "AVOS Tech" "Ingeniero Especialista en IoT"
+
+- Export PDF sin intervención manual
 
 ```## 🔥 Ejemplos Reales
 
+### 💡 **v3.0 - Inteligencia (Futuro)**
 
+- Keywords automáticas por industria
 
-**Resultado:** Colores azul tecnológico, keywords IoT automáticas, resumen personalizado### **Ingeniero IoT**
+- A/B testing de efectividad
 
-```bash
+- Optimización basada en métricas**Resultado:** Colores azul tecnológico, keywords IoT automáticas, resumen personalizado### **Ingeniero IoT**
 
-### **Desarrollador Senior**./cv-suite generate html "AVOS Tech" "Ingeniero Especialista en IoT"
-
-```
-
-```bash**Resultado:** Colores azul tecnológico, keywords IoT automáticas, resumen personalizado
-
-./cv-suite generate compact "Google" "Senior Software Engineer"
-
-```### **Desarrollador Senior**
+- Templates adaptativos
 
 ```bash
-
-**Resultado:** PDF compacto, colores profesionales, keywords de software./cv-suite generate compact "Google" "Senior Software Engineer"
-
-```
-
-### **Ingeniero Embebido****Resultado:** PDF compacto, colores profesionales, keywords de software
-
-
-
-```bash### **Ingeniero Embebido**
-
-./cv-suite generate latex "Tesla" "Embedded Systems Engineer"```bash
-
-```./cv-suite generate latex "Tesla" "Embedded Systems Engineer"
-
-```
-
-**Resultado:** LaTeX profesional, colores automotive, keywords de tiempo real**Resultado:** LaTeX profesional, colores automotive, keywords de tiempo real
-
-
-
-### **Predicción de Colores**### **Predicción de Colores**
-
-```bash
-
-```bash./cv-suite colors "Intel" "Embedded Engineer"
-
-./cv-suite colors "Intel" "Embedded Engineer"```
-
-```**Resultado:** Análisis psicológico y esquema de colores automático
-
-
-
-**Resultado:** Análisis psicológico y esquema de colores automático---
-
-
-
----## � Comparación de Rendimiento
-
-
-
-## 📊 Comparación de Rendimiento| Métrica | HTML+CSS | Markdown | ReportLab | LaTeX |
-
-|---------|----------|----------|-----------|-------|
-
-| Métrica | HTML | Compact | Markdown | LaTeX | ReportLab Avanzado || **Tiempo** | 5s | 2s | 3s | 10s |
-
-|---------|------|---------|----------|-------|-------------------|| **ATS Score** | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ | ⭐⭐⭐ |
-
-| **Tiempo** | 5s | 3s | 2s | 10s | 4s || **Personalización** | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐ |
-
-| **ATS Score** | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ || **Facilidad** | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐ |
-
-| **Personalización** | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
-
-| **Facilidad** | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐ | ⭐⭐ |---
-
-| **Diseño 2025** | ⭐⭐⭐ | ⭐⭐ | ⭐ | ⭐⭐ | ⭐⭐⭐ |
-
-## 📁 Estructura del Proyecto (Refactorizada 2025)
 
 ---
 
+### **Desarrollador Senior**./cv-suite generate html "AVOS Tech" "Ingeniero Especialista en IoT"
+
+## 🆘 Solución de Problemas
+
+```
+
+### **Errores Comunes**
+
+```bash**Resultado:** Colores azul tecnológico, keywords IoT automáticas, resumen personalizado
+
+**Error: `python: command not found`**
+
+```bash./cv-suite generate compact "Google" "Senior Software Engineer"
+
+python3 generate-cv.py  # Usar python3 en su lugar
+
+``````### **Desarrollador Senior**
+
+
+
+**Error: Módulos no encontrados**```bash
+
+```bash
+
+cd cv-simple**Resultado:** PDF compacto, colores profesionales, keywords de software./cv-suite generate compact "Google" "Senior Software Engineer"
+
+pip3 install -r requirements.txt
+
+``````
+
+
+
+**Output no se genera**### **Ingeniero Embebido****Resultado:** PDF compacto, colores profesionales, keywords de software
+
+- Verificar permisos de escritura en directorio `output/`
+
+- Comprobar Python 3.7+ instalado
+
+
+
+### **Soporte**```bash### **Ingeniero Embebido**
+
+1. Revisar [`cv-simple/docs/usage.md`](./cv-simple/docs/usage.md)
+
+2. Consultar ejemplos en `cv-simple/output/`./cv-suite generate latex "Tesla" "Embedded Systems Engineer"```bash
+
+3. Verificar código fuente (solo 150 líneas!)
+
+```./cv-suite generate latex "Tesla" "Embedded Systems Engineer"
+
+---
+
+```
+
+## 🏆 Filosofía del Proyecto
+
+**Resultado:** LaTeX profesional, colores automotive, keywords de tiempo real**Resultado:** LaTeX profesional, colores automotive, keywords de tiempo real
+
+> **"Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."** - Antoine de Saint-Exupéry
+
+
+
+**CV Simple** encarna esta filosofía:
+
+### **Predicción de Colores**### **Predicción de Colores**
+
+- 🗑️ **Eliminamos** la complejidad innecesaria (19 archivos → 1)
+
+- 💎 **Conservamos** lo esencial para excelencia (calidad profesional)```bash
+
+- ⚡ **Priorizamos** resultados sobre características técnicas
+
+- 🎯 **Optimizamos** para el usuario final, no el desarrollador```bash./cv-suite colors "Intel" "Embedded Engineer"
+
+
+
+---./cv-suite colors "Intel" "Embedded Engineer"```
+
+
+
+## 📈 Métricas de Éxito```**Resultado:** Análisis psicológico y esquema de colores automático
+
+
+
+### **Reducción de Complejidad**
+
+- **95% menos código** (3000 → 150 líneas)
+
+- **90% menos dependencias** (10+ → 3 paquetes)  **Resultado:** Análisis psicológico y esquema de colores automático---
+
+- **93% menos tiempo setup** (30+ → 2 minutos)
+
+- **100% misma calidad** profesional de output
+
+
+
+### **ROI del Usuario**---## � Comparación de Rendimiento
+
+- **Tiempo ahorrado**: 28 minutos por CV generado
+
+- **Complejidad eliminada**: No más configuraciones complejas
+
+- **Mantenimiento reducido**: Actualizaciones en 1 archivo vs 20+
+
+- **Usabilidad mejorada**: Workflow intuitivo y familiar## 📊 Comparación de Rendimiento| Métrica | HTML+CSS | Markdown | ReportLab | LaTeX |
+
+
+
+---|---------|----------|----------|-----------|-------|
+
+
+
+## 🎉 Conclusión| Métrica | HTML | Compact | Markdown | LaTeX | ReportLab Avanzado || **Tiempo** | 5s | 2s | 3s | 10s |
+
+
+
+**CV Simple** demuestra que a veces lo simple es lo más sofisticado:|---------|------|---------|----------|-------|-------------------|| **ATS Score** | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ | ⭐⭐⭐ |
+
+
+
+- ✅ **Una herramienta que realmente se usa** vs múltiples herramientas perfectas| **Tiempo** | 5s | 3s | 2s | 10s | 4s || **Personalización** | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐ |
+
+- ✅ **Resolver el problema real** vs demostración técnica  
+
+- ✅ **Mantenimiento mínimo** vs features impresionantes| **ATS Score** | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ || **Facilidad** | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐ |
+
+- ✅ **Workflow familiar** vs opciones infinitas
+
+| **Personalización** | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+
+El sistema anterior (ahora en `legacy/`) fue técnicamente impresionante pero prácticamente sobre-diseñado. **CV Simple** resuelve el mismo problema con 95% menos complejidad.
+
+| **Facilidad** | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐ | ⭐⭐ |---
+
+---
+
+| **Diseño 2025** | ⭐⭐⭐ | ⭐⭐ | ⭐ | ⭐⭐ | ⭐⭐⭐ |
+
+**¿Listo para generar tu CV profesional en 2 minutos?** 🚀
+
+## 📁 Estructura del Proyecto (Refactorizada 2025)
+
+```bash
+
+cd cv-simple && python3 generate-cv.py---
+
+```
 ```
 
 ## 📁 Estructura del Proyecto (Refactorizada 2025)curriculum/

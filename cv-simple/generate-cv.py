@@ -1,0 +1,398 @@
+#!/usr/bin/env python3
+# 🚀 CV Generator HTML - Una página perfecta para PDF
+
+"""
+CV Generator HTML Simple
+- Genera CV en HTML optimizado para una página A4
+- CSS inline para fácil exportación a PDF
+- Sin dependencies externas
+"""
+
+from datetime import datetime
+
+
+class CVGeneratorHTML:
+    """Generador simple de CV en HTML de una página"""
+    
+    def __init__(self):
+        self.personal_data = {
+            "name": "Arturo Veras Olivos",
+            "title": "Ingeniero Civil Electrónico",
+            "location": "Santiago, Chile",
+            "phone": "+56 9 82413883",
+            "email": "a.veras@gmail.com",
+            "experience_years": "9+",
+        }
+    
+    def generate_html_cv(self) -> str:
+        """Genera CV completo en HTML optimizado para una página A4"""
+        
+        html_content = f"""<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - {self.personal_data['name']}</title>
+    <style>
+        /* CSS optimizado para una página A4 (210mm × 297mm) */
+        * {{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }}
+        
+        body {{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 11px;
+            line-height: 1.3;
+            color: #333;
+            background: #fff;
+            max-width: 794px; /* A4 width in pixels (210mm) */
+            max-height: 1123px; /* A4 height in pixels (297mm) */
+            margin: 0 auto;
+            padding: 15px;
+        }}
+        
+        /* Print styles para PDF perfecto */
+        @media print {{
+            body {{
+                margin: 0;
+                padding: 15px;
+                font-size: 10px;
+            }}
+            @page {{
+                size: A4;
+                margin: 10mm;
+            }}
+        }}
+        
+        /* Header */
+        .header {{
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }}
+        
+        .header h1 {{
+            font-size: 22px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 2px;
+        }}
+        
+        .header .subtitle {{
+            font-size: 14px;
+            color: #34495e;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }}
+        
+        .header .contact {{
+            font-size: 10px;
+            color: #7f8c8d;
+        }}
+        
+        /* Secciones */
+        .section {{
+            margin-bottom: 10px;
+        }}
+        
+        .section h2 {{
+            font-size: 13px;
+            font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 2px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }}
+        
+        .section p, .section li {{
+            margin-bottom: 4px;
+        }}
+        
+        /* Experiencia */
+        .job {{
+            margin-bottom: 8px;
+        }}
+        
+        .job-title {{
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 11px;
+        }}
+        
+        .job-details {{
+            font-size: 10px;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 3px;
+        }}
+        
+        .job-achievements {{
+            font-size: 10px;
+            line-height: 1.2;
+        }}
+        
+        /* Listas */
+        ul {{
+            padding-left: 12px;
+        }}
+        
+        li {{
+            font-size: 10px;
+            margin-bottom: 1px;
+        }}
+        
+        /* Skills en columnas */
+        .skills-grid {{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+            font-size: 10px;
+        }}
+        
+        .skill-category {{
+            background: #f8f9fa;
+            padding: 6px;
+            border-radius: 3px;
+        }}
+        
+        .skill-category h4 {{
+            font-size: 10px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }}
+        
+        /* Proyectos compactos */
+        .project {{
+            margin-bottom: 6px;
+            border-left: 2px solid #3498db;
+            padding-left: 6px;
+        }}
+        
+        .project-title {{
+            font-weight: 600;
+            font-size: 10px;
+            color: #2c3e50;
+        }}
+        
+        .project-tech {{
+            font-size: 9px;
+            color: #7f8c8d;
+            font-style: italic;
+        }}
+        
+        .project-description {{
+            font-size: 10px;
+            margin-top: 2px;
+        }}
+        
+        /* Educación compacta */
+        .education-item {{
+            margin-bottom: 4px;
+        }}
+        
+        .education-degree {{
+            font-weight: 600;
+            font-size: 10px;
+        }}
+        
+        .education-details {{
+            font-size: 9px;
+            color: #7f8c8d;
+        }}
+        
+        /* Grid de 2 columnas para secciones compactas */
+        .two-column {{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }}
+        
+        /* Logros en lista compacta */
+        .achievements {{
+            columns: 2;
+            column-gap: 12px;
+            font-size: 10px;
+        }}
+        
+        .achievements li {{
+            margin-bottom: 2px;
+            break-inside: avoid;
+        }}
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <h1>{self.personal_data['name']}</h1>
+        <div class="subtitle">Senior IoT Engineer & Embedded Systems Specialist</div>
+        <div class="contact">
+            📍 {self.personal_data['location']} | 📞 {self.personal_data['phone']} | ✉️ {self.personal_data['email']} | 🏆 {self.personal_data['experience_years']} años de experiencia
+        </div>
+    </div>
+
+    <!-- PERFIL PROFESIONAL -->
+    <div class="section">
+        <h2>Perfil Profesional</h2>
+        <p>Ingeniero Civil Electrónico con <strong>9+ años de experiencia</strong> desarrollando soluciones tecnológicas end-to-end, desde hardware embebido hasta aplicaciones empresariales. Especialista en <strong>sistemas IoT críticos</strong> y <strong>firmware para microcontroladores STM32</strong>, con experiencia comprobada en entornos industriales extremos.</p>
+    </div>
+
+    <!-- COMPETENCIAS TÉCNICAS (Grid de 3 columnas) -->
+    <div class="section">
+        <h2>Competencias Técnicas</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Programación</h4>
+                <ul>
+                    <li><strong>C/C++</strong> (Expert)</li>
+                    <li><strong>Python</strong> (Advanced)</li>
+                    <li>Java (Intermedio)</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Embedded/Hardware</h4>
+                <ul>
+                    <li><strong>STM32</strong> (Producción)</li>
+                    <li>FreeRTOS</li>
+                    <li>ESP32, Arduino</li>
+                    <li>LoRa, MQTT, Bluetooth</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Software/DevOps</h4>
+                <ul>
+                    <li>React, MongoDB</li>
+                    <li>Google Cloud, Docker</li>
+                    <li>Linux, Git</li>
+                    <li>SpringBoot, Flutter</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXPERIENCIA PROFESIONAL -->
+    <div class="section">
+        <h2>Experiencia Profesional</h2>
+        
+        <div class="job">
+            <div class="job-title">UQOMM SpA - Encargado de Software y Firmware</div>
+            <div class="job-details">Septiembre 2021 - Presente (3+ años) | Con Con, Chile</div>
+            <div class="job-achievements">
+                • <strong>Sistema IoT crítico:</strong> Arquitectura completa para monitoreo de amplificadores en minería subterránea<br>
+                • <strong>Firmware STM32:</strong> Programación C/C++ con FreeRTOS y optimización de periféricos<br>
+                • <strong>Stack tecnológico:</strong> Python + React + MongoDB + MQTT (500K+ datos/día, 99.9% disponibilidad)<br>
+                • <strong>Administración:</strong> Servidores Google Cloud, Linux y sistemas Odoo
+            </div>
+        </div>
+        
+        <div class="job">
+            <div class="job-title">BlackGPS - Ingeniero de Hardware y Software</div>
+            <div class="job-details">Julio 2017 - Agosto 2021 (4+ años) | Santiago, Chile</div>
+            <div class="job-achievements">
+                • <strong>Dispositivo anti-robo:</strong> Diseño completo hardware/software con inhibidor GNSS/GSM<br>
+                • <strong>Backend Java:</strong> Nuevas funcionalidades en SpringBoot para procesamiento GPS y CANBus<br>
+                • <strong>App Flutter:</strong> Mejoras en aplicación móvil con comunicación Bluetooth<br>
+                • <strong>Soporte técnico:</strong> Configuración dispositivos Teltonika, DCT Syrus, ERM Starlink
+            </div>
+        </div>
+    </div>
+
+    <!-- PROYECTOS DESTACADOS -->
+    <div class="section">
+        <h2>Proyectos Destacados</h2>
+        
+        <div class="project">
+            <div class="project-title">Sistema IoT Industrial - Minería Subterránea</div>
+            <div class="project-tech">STM32 • FreeRTOS • Python • LoRa • React</div>
+            <div class="project-description">Arquitectura end-to-end para monitoreo crítico. <strong>Impacto:</strong> 500K+ datos/día, 99.9% disponibilidad</div>
+        </div>
+        
+        <div class="project">
+            <div class="project-title">Dispositivo Anti-Robo Inteligente</div>
+            <div class="project-tech">Hardware Design • GNSS/GSM • Embedded Systems</div>
+            <div class="project-description">Diseño completo desde concepto hasta producción. Producto comercial en uso por empresas de logística</div>
+        </div>
+        
+        <div class="project">
+            <div class="project-title">Red de Sensores Sísmicos</div>
+            <div class="project-tech">Sensor Networks • Signal Processing • IoT</div>
+            <div class="project-description">Sistema distribuido para detección temprana. 80 nodos con comunicación inalámbrica y procesamiento tiempo real</div>
+        </div>
+    </div>
+
+    <!-- EDUCACIÓN Y LOGROS (2 columnas) -->
+    <div class="two-column">
+        <div class="section">
+            <h2>Educación</h2>
+            <div class="education-item">
+                <div class="education-degree">Ingeniero Civil Electrónico</div>
+                <div class="education-details">Universidad Técnica Federico Santa María (2006-2014)</div>
+            </div>
+            <div class="education-item">
+                <div class="education-degree">Certificaciones</div>
+                <div class="education-details">• Metodologías Ágiles (2022)<br>• Scrum + Kanban (2019)<br>• Diseño Circuitos Integrados (2017)</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Idiomas & Logros</h2>
+            <p><strong>Español:</strong> Nativo | <strong>Inglés:</strong> B2 Upper Intermediate</p>
+            <ul class="achievements">
+                <li>Ganador I+D Aplicada - Fundación Copec UC (2015)</li>
+                <li>Sistemas Críticos - 3+ años sin fallas en minería</li>
+                <li>Innovación Tecnológica - 5+ productos hasta producción</li>
+                <li>Liderazgo Técnico - Gestión proyectos multidisciplinarios</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>"""
+        
+        return html_content
+    
+    def save_cv(self, output_dir: str = "output") -> str:
+        """Guarda el CV en HTML y devuelve la ruta"""
+        import os
+        
+        # Crear directorio si no existe
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+        
+        # Generar nombre único
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"cv_arturo_veras_{timestamp}.html"
+        filepath = os.path.join(output_dir, filename)
+        
+        # Guardar archivo
+        html_content = self.generate_html_cv()
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(html_content)
+        
+        return filepath
+
+
+def main():
+    """Función principal simplificada"""
+    print("🚀 CV Generator HTML - Una página perfecta para PDF")
+    print("=" * 50)
+    
+    generator = CVGeneratorHTML()
+    filepath = generator.save_cv()
+    
+    print(f"✅ CV generado exitosamente!")
+    print(f"📄 Archivo: {filepath}")
+    print(f"\n💡 Cómo exportar a PDF:")
+    print(f"   1. Abrir {filepath} en navegador")
+    print(f"   2. Ctrl+P / Cmd+P (Imprimir)")
+    print(f"   3. Seleccionar 'Guardar como PDF'")
+    print(f"   4. Configurar márgenes mínimos")
+    print(f"   5. ¡Listo! CV profesional en una página")
+
+
+if __name__ == "__main__":
+    main()
