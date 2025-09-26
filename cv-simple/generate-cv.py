@@ -239,7 +239,7 @@ class CVGeneratorHTML:
     <!-- PERFIL PROFESIONAL -->
     <div class="section">
         <h2>Perfil Profesional</h2>
-        <p>Ingeniero Civil Electrónico con <strong>9+ años de experiencia</strong> desarrollando soluciones tecnológicas end-to-end, desde hardware embebido hasta aplicaciones empresariales. Especialista en <strong>sistemas IoT críticos</strong> y <strong>firmware para microcontroladores STM32</strong>, con experiencia comprobada en entornos industriales extremos.</p>
+        <p>Ingeniero Civil Electrónico con <strong>9+ años de experiencia</strong> desarrollando soluciones tecnológicas end-to-end, desde hardware embebido hasta aplicaciones empresariales. Especialista en <strong>sistemas de comunicaciones RF</strong> y <strong>firmware para microcontroladores STM32</strong>, con enfoque en diagnóstico remoto para minería subterránea.</p>
     </div>
 
     <!-- COMPETENCIAS TÉCNICAS (Grid de 3 columnas) -->
@@ -249,9 +249,9 @@ class CVGeneratorHTML:
             <div class="skill-category">
                 <h4>Programación</h4>
                 <ul>
-                    <li><strong>C/C++</strong> (Expert)</li>
-                    <li><strong>Python</strong> (Advanced)</li>
-                    <li>Java (Intermedio)</li>
+                    <li><strong>C/C++</strong></li>
+                    <li><strong>Python</strong></li>
+                    <li>Java</li>
                 </ul>
             </div>
             <div class="skill-category">
@@ -280,13 +280,13 @@ class CVGeneratorHTML:
         <h2>Experiencia Profesional</h2>
         
         <div class="job">
-            <div class="job-title">UQOMM SpA - Encargado de Software y Firmware</div>
-            <div class="job-details">Septiembre 2021 - Presente (3+ años) | Con Con, Chile</div>
+            <div class="job-title">UQOMM SpA - Líder Técnico de Desarrollo | Arquitecto de Software & Firmware</div>
+            <div class="job-details">Septiembre 2021 - Presente (4+ años) | Con Con, Chile</div>
             <div class="job-achievements">
-                • <strong>Sistema IoT crítico:</strong> Arquitectura completa para monitoreo de amplificadores en minería subterránea<br>
+                • <strong>Sistema de diagnóstico remoto:</strong> Arquitectura para evitar que operarios bajen a la mina mediante diagnóstico remoto de la red de comunicaciones RF<br>
                 • <strong>Firmware STM32:</strong> Programación C/C++ con FreeRTOS y optimización de periféricos<br>
-                • <strong>Stack tecnológico:</strong> Python + React + MongoDB + MQTT (500K+ datos/día, 99.9% disponibilidad)<br>
-                • <strong>Administración:</strong> Servidores Google Cloud, Linux y sistemas Odoo
+                • <strong>Stack tecnológico:</strong> Python + React + MongoDB + MQTT para sistema de telemetría y diagnóstico<br>
+                • <strong>Liderazgo técnico:</strong> Planificación y gestión de arquitectura de sistemas, liderazgo de equipo desarrollo SW/FW
             </div>
         </div>
         
@@ -309,7 +309,7 @@ class CVGeneratorHTML:
         <div class="project">
             <div class="project-title">Sistema IoT Industrial - Minería Subterránea</div>
             <div class="project-tech">STM32 • FreeRTOS • Python • LoRa • React</div>
-            <div class="project-description">Arquitectura end-to-end para monitoreo crítico. <strong>Impacto:</strong> 500K+ datos/día, 99.9% disponibilidad</div>
+            <div class="project-description">Sistema de diagnóstico remoto para red RF en minería. <strong>Impacto:</strong> Reducción de costos operacionales eliminando revisiones locales de cada amplificador</div>
         </div>
         
         <div class="project">
@@ -344,7 +344,7 @@ class CVGeneratorHTML:
             <p><strong>Español:</strong> Nativo | <strong>Inglés:</strong> B2 Upper Intermediate</p>
             <ul class="achievements">
                 <li>Ganador I+D Aplicada - Fundación Copec UC (2015)</li>
-                <li>Sistemas Críticos - 3+ años sin fallas en minería</li>
+                <li>Desarrollo de 5+ firmwares: headend, LoRa master-remoto, telemetría, tags y leak feeder</li>
                 <li>Innovación Tecnológica - 5+ productos hasta producción</li>
                 <li>Liderazgo Técnico - Gestión proyectos multidisciplinarios</li>
             </ul>
