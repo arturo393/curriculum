@@ -286,7 +286,7 @@ class CVGeneratorHTML:
             <div class="job-details">Septiembre 2021 - Presente (4+ años) | Con Con, Chile</div>
             <div class="job-achievements">
                 • <strong>Sistema de diagnóstico remoto:</strong> Desarrollo de arquitectura de monitoreo y diagnóstico para redes de comunicaciones RF en minería subterránea<br>
-                • <strong>Firmware STM32:</strong> Programación C/C++ con FreeRTOS y optimización de periféricos<br>
+                • <strong>Firmware STM32:</strong> Programación C/C++ y optimización de periféricos<br>
                 • <strong>Stack tecnológico:</strong> Python + React + MongoDB + MQTT para sistema de telemetría y diagnóstico<br>
                 • <strong>Análisis de problemas:</strong> Diagnóstico y resolución de fallas complejas en sistemas embebidos y redes RF de difícil acceso<br>
                 • <strong>Prompt Engineering:</strong> 2+ años aplicando IA generativa para planificación de desarrollos, documentación técnica y diseño de soluciones<br>
@@ -299,6 +299,7 @@ class CVGeneratorHTML:
             <div class="job-details">Julio 2017 - Agosto 2021 (4+ años) | Santiago, Chile</div>
             <div class="job-achievements">
                 • <strong>Dispositivo anti-robo:</strong> Diseño completo hardware/software con inhibidor GNSS/GSM<br>
+                • <strong>Firmware con FreeRTOS:</strong> Desarrollo en C/C++ para sistema de tiempo real<br>
                 • <strong>Backend Java:</strong> Nuevas funcionalidades en SpringBoot para procesamiento GPS y CANBus<br>
                 • <strong>App Flutter:</strong> Mejoras en aplicación móvil con comunicación Bluetooth<br>
                 • <strong>Soporte técnico:</strong> Configuración dispositivos Teltonika, DCT Syrus, ERM Starlink
