@@ -283,7 +283,7 @@ class CVGeneratorHTML:
             <div class="job-title">UQOMM SpA - Líder Técnico de Desarrollo | Arquitecto de Software & Firmware</div>
             <div class="job-details">Septiembre 2021 - Presente (4+ años) | Con Con, Chile</div>
             <div class="job-achievements">
-                • <strong>Sistema de diagnóstico remoto:</strong> Arquitectura para evitar que operarios bajen a la mina mediante diagnóstico remoto de la red de comunicaciones RF<br>
+                • <strong>Sistema de diagnóstico remoto:</strong> Desarrollo de arquitectura de monitoreo y diagnóstico para redes de comunicaciones RF en minería subterránea<br>
                 • <strong>Firmware STM32:</strong> Programación C/C++ con FreeRTOS y optimización de periféricos<br>
                 • <strong>Stack tecnológico:</strong> Python + React + MongoDB + MQTT para sistema de telemetría y diagnóstico<br>
                 • <strong>Liderazgo técnico:</strong> Planificación y gestión de arquitectura de sistemas, liderazgo de equipo desarrollo SW/FW
