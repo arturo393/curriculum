@@ -209,7 +209,7 @@ class CVGeneratorHTML:
         /* Grid de 2 columnas para secciones compactas */
         .two-column {{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1.4fr;
             gap: 12px;
         }}
         
@@ -330,7 +330,7 @@ class CVGeneratorHTML:
         </div>
     </div>
 
-    <!-- EDUCACIÓN Y LOGROS (2 columnas) -->
+    <!-- EDUCACIÓN Y IDIOMAS/LOGROS (2 columnas con más espacio para idiomas/logros) -->
     <div class="two-column">
         <div class="section">
             <h2>Educación</h2>
@@ -345,14 +345,19 @@ class CVGeneratorHTML:
         </div>
         
         <div class="section">
-            <h2>Idiomas & Logros</h2>
-            <p><strong>Español:</strong> Nativo | <strong>Inglés:</strong> B2 Upper Intermediate</p>
-            <ul class="achievements">
-                <li>Ganador I+D Aplicada - Fundación Copec UC (2015)</li>
-                <li>Desarrollo de 5+ firmwares: headend, LoRa master-remoto, telemetría, tags y leak feeder</li>
-                <li>Innovación Tecnológica - 5+ productos hasta producción</li>
-                <li>Liderazgo Técnico - Gestión proyectos multidisciplinarios</li>
-            </ul>
+            <h2>Idiomas & Logros Profesionales</h2>
+            <div style="margin-bottom: 8px;">
+                <p><strong>Español:</strong> Nativo</p>
+                <p><strong>Inglés:</strong> B2 Upper Intermediate (técnico fluido)</p>
+            </div>
+            <div>
+                <ul class="achievements" style="columns: 1; column-gap: 0;">
+                    <li style="margin-bottom: 3px;">Ganador I+D Aplicada - Fundación Copec UC (2015)</li>
+                    <li style="margin-bottom: 3px;">Desarrollo de 5+ firmwares especializados: headend, LoRa master-remoto, telemetría, sistema tags y leak feeder</li>
+                    <li style="margin-bottom: 3px;">Innovación Tecnológica - 5+ productos llevados hasta producción comercial</li>
+                    <li style="margin-bottom: 3px;">Liderazgo Técnico - Gestión exitosa de proyectos multidisciplinarios</li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
