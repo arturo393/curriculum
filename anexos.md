@@ -14,33 +14,47 @@
 
 ### Idiomas
 - **Español**: Nativo
-- **Inglés**: B2 Upper Intermediate (técnico fluido)
+- **Inglés**: B2 Upper Intermediate (lectura técnica avanzada, conversación intermedia)
+
+### Disponibilidad Internacional 🌍
+- ✅ **Trabajo remoto**: Disponible para posiciones 100% remotas internacionales
+- ✅ **Reloc ación**: Abierto a mudarse (preferencia: Australia, Nueva Zelanda, Europa, Canadá, USA)
+- ✅ **Zona horaria**: Flexible para equipos distribuidos
+- ✅ **Visa**: Ingeniero calificado para skilled worker visas (9+ años experiencia)
+- ✅ **Motivación**: Busca experiencia internacional, mejores compensaciones, crecimiento profesional
 
 ---
 
 ## 🎯 PERFIL PROFESIONAL CORE
 
 ### Súper Poder Principal
-**"Ingeniero Full-Stack de Sistemas Embebidos e IoT"**
-- Visión 360° del producto tecnológico: desde ideación hasta soporte al cliente
-- Capacidad única de conectar hardware, firmware, software y necesidades de negocio
+**"AI-Powered Full-Stack Engineer: Embedded to Cloud"**
+- **DIFERENCIADOR CRÍTICO**: 3-4 años usando GitHub Copilot y LLM prompting diariamente (desde 2021-2022)
+- Velocidad de desarrollo 3-5x más rápida que ingenieros tradicionales
+- Capacidad de trabajar múltiples proyectos en paralelo (frontend, backend, firmware simultáneamente)
+- Genera más código, documentación y funcionalidad en menos tiempo
+- Lidera adopción de AI en equipos técnicos con responsabilidad profesional
+- Visión 360° del producto tecnológico: desde hardware hasta cloud, potenciado por AI
 - Experiencia en ciclo completo: diseño → fabricación → programación → integración → instalación → soporte
 
 ### Fortalezas Clave
-1. **Pragmatismo técnico**: Soluciones eficientes priorizando valor sobre burocracia
-2. **Visión de negocio**: Alineación natural con intereses empresariales y necesidades del cliente
-3. **Liderazgo técnico**: Experiencia gestionando equipos y arquitecturas
-4. **Adaptabilidad**: Exitoso en múltiples industrias y contextos tecnológicos
-5. **Innovación práctica**: Enfoque en crear soluciones tecnológicas que resuelvan problemas reales
+1. **AI-Enhanced Engineering**: 3-4 años dominando Copilot, ChatGPT, Claude para desarrollo acelerado
+2. **Pragmatismo técnico**: Soluciones eficientes priorizando valor sobre burocracia
+3. **Visión de negocio**: Alineación natural con intereses empresariales y necesidades del cliente
+4. **Liderazgo técnico**: Experiencia gestionando equipos (2 directos, 10 en equipo) y arquitecturas
+5. **Adaptabilidad**: Exitoso en múltiples industrias y contextos tecnológicos
+6. **Innovación práctica**: Enfoque en crear soluciones tecnológicas que resuelvan problemas reales
+7. **Full-stack IoT**: Capacidad única de conectar hardware, firmware, software y cloud
 
 ---
 
 ## 💼 EXPERIENCIA PROFESIONAL DETALLADA
 
-### UQOMM SpA (Septiembre 2021 - Actual) - 3 años y 10 meses
-**Cargo**: Encargado de Software y Firmware
+### UQOMM SpA (Septiembre 2021 - Actual) - 3+ años
+**Cargo**: Tech Lead / Encargado de Software y Firmware
 **Industria**: Soluciones de comunicaciones para minería subterránea
 **Empresa**: www.uqomm.com | Con Con, Chile
+**Equipo**: 2 reportes directos, coordinación con equipo de 10 ingenieros
 
 #### Responsabilidades Principales:
 
@@ -121,9 +135,18 @@ Spin-off enfocado en nueva tecnología para generación de hidrógeno.
 ## 🛠️ COMPETENCIAS TÉCNICAS CONFIRMADAS
 
 ### Lenguajes de Programación
-- **C/C++**: Expert level (desarrollo firmware embebido)
-- **Python**: Advanced (backend, instrumentación RF, sistemas de monitoreo)
+- **C/C++**: Expert level (desarrollo firmware embebido, STM32, ESP32)
+- **Python**: Advanced (backend, instrumentación RF, sistemas de monitoreo, scripting)
 - **Java**: Intermedio (SpringBoot para backend BlackGPS)
+- **JavaScript/TypeScript**: Intermedio (React frontend, Node.js)
+
+### AI & Prompt Engineering (DIFERENCIADOR CLAVE ⭐⭐⭐)
+- **GitHub Copilot**: 3-4 años de uso diario profesional (desde 2021-2022)
+- **LLM Prompting**: ChatGPT, Claude, Gemini para desarrollo acelerado
+- **AI-Assisted Development**: Documentación, debugging, arquitectura, code review
+- **Team AI Leadership**: Entrena y evangeliza uso responsable de AI en equipos
+- **Productividad**: 3-5x más rápido en desarrollo, múltiples proyectos paralelos
+- **Responsabilidad Profesional**: Uso crítico y validación de output AI como herramienta ingenieril
 
 ### Microcontroladores y Hardware
 - **STM32**: Cortex M0 (experiencia confirmada en UQOMM)
@@ -132,12 +155,14 @@ Spin-off enfocado en nueva tecnología para generación de hidrógeno.
 - **FPGA**: Xilinx Virtex-5 (programación con LabVIEW y Python)
 
 ### Sistemas Operativos y DevOps
-- **Linux**: Administración de servidores
+- **Linux**: Administración de servidores, scripting avanzado
 - **FreeRTOS**: Sistemas embebidos en tiempo real
-- **Google Cloud**: Compute Engine, administración de servidores
-- **Docker**: Contenedores
-- **Git**: Control de versiones
+- **Google Cloud**: Básico (Compute Engine VMs, deploy aplicaciones) - *No experto cloud*
+- **Docker**: Uso frecuente (contenedores, compose) - *No Kubernetes avanzado*
+- **Git/GitHub**: Control de versiones, gestión de repositorios de equipo
 - **Bash/Ansible**: Scripting y automatización
+- **Cloud Skills**: Enfocado en deploy aplicaciones, no arquitectura cloud enterprise
+- **Aprendizaje activo**: Mejorando skills cloud usando proyectos con Gemini/AI
 
 ### Comunicaciones y Protocolos
 - **Redes**: TCP/IP
@@ -262,12 +287,14 @@ Spin-off enfocado en nueva tecnología para generación de hidrógeno.
 
 ## 🏆 DIFERENCIADORES COMPETITIVOS
 
-1. **Visión 360°**: Entiende todo el ciclo de vida del producto tecnológico
-2. **Business Acumen**: Conecta naturalmente la tecnología con valor de negocio
-3. **Polivalencia técnica**: Igual de cómodo con hardware que con software
-4. **Experiencia en entornos extremos**: Sistemas críticos en minería subterránea
-5. **Liderazgo práctico**: Gestión exitosa de equipos técnicos reales
-6. **Innovación aplicada**: Historial de convertir ideas en productos funcionando
+1. **🤖 AI-POWERED ENGINEER (CRÍTICO)**: 3-4 años usando Copilot/LLMs diariamente = 3-5x velocidad vs ingenieros tradicionales
+2. **Visión 360°**: Hardware → Firmware → Backend → Frontend → Cloud (full-stack completo)
+3. **Business Acumen**: Conecta naturalmente la tecnología con valor de negocio
+4. **Polivalencia técnica**: Igual de cómodo con hardware embebido que con software cloud
+5. **Experiencia en entornos extremos**: Sistemas críticos en minería subterránea (alta disponibilidad)
+6. **Liderazgo práctico**: Gestión exitosa de equipos técnicos reales (2 directos, 10 coordinación)
+7. **Innovación aplicada**: Historial de convertir ideas en productos funcionando
+8. **Multi-proyecto**: Capacidad única de trabajar múltiples proyectos en paralelo (gracias a AI)
 
 ---
 
