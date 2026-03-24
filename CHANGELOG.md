@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.0.0] - 2026-03-24 🚀
+
+### 🏢 EVOLUCIÓN A LIDERAZGO I+D + IA AGENTS
+
+#### Added
+- ✨ **Software Lead I+D**: Actualización de rol clave liderando equipo de 3 ingenieros.
+- 🤖 **AI Workflows Integration**: Inclusión de flujos de trabajo "Full IA" con GitHub Copilot, Gemini y Agentes de IA.
+- 📐 **Strategic Design**: Enfoque en arquitectura técnica y planes de test antes de la implementación.
+- 🤝 **Client Focus**: Orientación a soluciones validadas por el cliente y calidad en fabricación.
+
+#### Changed
+- 📈 **Experiencia Acumulada**: Actualización a 12 años de trayectoria profesional.
+- 🧹 **Limpieza Extrema**: Eliminación de sistemas v1, v2 y legacy para consolidar `cv-simple` como único estándar.
+- 📄 **English & Spanish Sync**: Ambos generadores actualizados con la visión de 2026.
+
+#### Migration Guide
+```bash
+# Sencillez absoluta
+python3 cv-simple/generate-cv.py         # Genera CV en español
+python3 cv-simple/generate-cv-english.py # Genera CV en inglés
+```
+
+---
+
 ## [3.0.0] - 2025-09-25 🎯
 
 ### 🚀 SIMPLIFICACIÓN RADICAL - HTML FIRST APPROACH

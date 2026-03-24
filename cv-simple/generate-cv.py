@@ -21,11 +21,11 @@ class CVGeneratorHTML:
             "location": "Santiago, Chile",
             "phone": "+56 9 82413883",
             "email": "a.veras@gmail.com",
-            "experience_years": "9+",
+            "experience_years": "12+",
         }
     
     def generate_html_cv(self) -> str:
-        """Genera CV completo en HTML optimizado para una página A4"""
+        """Generar CV completo en HTML optimizado para una página A4"""
         
         html_content = f"""<!DOCTYPE html>
 <html lang="es">
@@ -230,7 +230,7 @@ class CVGeneratorHTML:
     <!-- HEADER -->
     <div class="header">
         <h1>{self.personal_data['name']}</h1>
-        <div class="subtitle">Senior IoT Engineer & Embedded Systems Specialist</div>
+        <div class="subtitle">Software Lead I+D | AI-Driven Architect | Electronic Civil Engineer</div>
         <div class="contact">
             📍 {self.personal_data['location']} | 📞 {self.personal_data['phone']} | ✉️ {self.personal_data['email']} | 🏆 {self.personal_data['experience_years']} años de experiencia
         </div>
@@ -239,7 +239,7 @@ class CVGeneratorHTML:
     <!-- PERFIL PROFESIONAL -->
     <div class="section">
         <h2>Perfil Profesional</h2>
-        <p>Ingeniero Civil Electrónico con <strong>9+ años de experiencia</strong> desarrollando soluciones tecnológicas end-to-end, desde hardware embebido hasta aplicaciones empresariales. Especialista en <strong>sistemas de comunicaciones RF</strong> y <strong>firmware para microcontroladores STM32</strong>, con enfoque en diagnóstico remoto para minería subterránea.</p>
+        <p>Ingeniero Civil Electrónico con <strong>12 años de experiencia</strong> en el ciclo completo de productos tecnológicos. Especialista en liderar equipos de I+D bajo flujos de trabajo "AI-First" (Copilot, Gemini, Agentes), diseñando arquitecturas robustas que abarcan desde firmware embebido (STM32/C++) hasta software full-stack (Python, React). Enfoque estratégico en calidad de fabricación y soluciones orientadas al cliente.</p>
     </div>
 
     <!-- COMPETENCIAS TÉCNICAS (Grid de 3 columnas) -->
@@ -247,31 +247,33 @@ class CVGeneratorHTML:
         <h2>Competencias Técnicas</h2>
         <div class="skills-grid">
             <div class="skill-category">
-                <h4>Programación</h4>
+                <h4>IA & Algoritmos</h4>
                 <ul>
-                    <li><strong>C/C++</strong></li>
-                    <li><strong>Python</strong></li>
-                    <li>Java</li>
+                    <li><strong>GitHub Copilot</strong> (Avanzado)</li>
+                    <li><strong>IA Agents & Workflows</strong></li>
+                    <li>Gemini AI / LLMs Integration</li>
+                    <li>Prompts Engineering</li>
+                    <li>IA Frameworks de decisión</li>
                 </ul>
             </div>
             <div class="skill-category">
-                <h4>Embedded/Hardware</h4>
+                <h4>Desarrollo & Arquitectura</h4>
                 <ul>
-                    <li><strong>STM32</strong> (Producción)</li>
-                    <li>FreeRTOS</li>
-                    <li>ESP32, Arduino</li>
-                    <li>LoRa, MQTT, Bluetooth</li>
+                    <li><strong>Python / C / C++</strong></li>
+                    <li><strong>Software Architecture</strong></li>
+                    <li>Planificación & Test (Frontend/Backend)</li>
+                    <li>Microcontroladores (STM32, ESP32)</li>
+                    <li>Firmware Design & Firmware Support</li>
                 </ul>
             </div>
             <div class="skill-category">
-                <h4>Software/DevOps</h4>
+                <h4>Cloud, DevOps & Liderazgo</h4>
                 <ul>
-                    <li>React, MongoDB</li>
-                    <li>Google Cloud, Docker</li>
-                    <li>Linux, Git</li>
-                    <li>SpringBoot, Flutter</li>
-                    <li><strong>Prompt Engineering</strong></li>
-                    <li><strong>Análisis de problemas complejos</strong></li>
+                    <li>Google Cloud (GCP)</li>
+                    <li>Liderazgo de equipos (I+D)</li>
+                    <li>Gestión de área TI</li>
+                    <li>Docker / Linux / Git</li>
+                    <li>React / MongoDB / Odoo</li>
                 </ul>
             </div>
         </div>
@@ -282,15 +284,15 @@ class CVGeneratorHTML:
         <h2>Experiencia Profesional</h2>
         
         <div class="job">
-            <div class="job-title">UQOMM SpA - Líder Técnico de Desarrollo | Arquitecto de Software & Firmware</div>
-            <div class="job-details">Septiembre 2021 - Presente (4+ años) | Con Con, Chile</div>
+            <div class="job-title">UQOMM SpA - Software Lead I+D | Arquitecto de IA, Software & Firmware</div>
+            <div class="job-details">Septiembre 2021 - Presente (4 años 6 meses) | Con Con, Chile | Comunicaciones para minería subterránea</div>
             <div class="job-achievements">
-                • <strong>Sistema de diagnóstico remoto:</strong> Desarrollo de arquitectura de monitoreo y diagnóstico para redes de comunicaciones RF en minería subterránea<br>
-                • <strong>Firmware STM32:</strong> Programación C/C++ y optimización de periféricos<br>
-                • <strong>Stack tecnológico:</strong> Python + React + MongoDB + MQTT para sistema de telemetría y diagnóstico<br>
-                • <strong>Análisis de problemas:</strong> Diagnóstico y resolución de fallas complejas en sistemas embebidos y redes RF de difícil acceso<br>
-                • <strong>Prompt Engineering:</strong> 2+ años aplicando IA generativa para planificación de desarrollos, documentación técnica y diseño de soluciones<br>
-                • <strong>Liderazgo técnico:</strong> Planificación y gestión de arquitectura de sistemas, liderazgo de equipo desarrollo SW/FW
+                • <strong>Liderazgo de Equipo:</strong> Creación y dirección de un equipo de 3 ingenieros, fomentando la autonomía, responsabilidad por proyectos y habilidades blandas.<br>
+                • <strong>Flujos Full IA:</strong> Implementación de metodologías de desarrollo acelerado con Copilot y agentes de IA para refactorización masiva e investigación de soluciones.<br>
+                • <strong>Arquitectura Estratégica:</strong> Diseño de planes técnicos y planes de test antes de la implementación, asegurando robustez en firmware, software y frontend.<br>
+                • <strong>Calidad & Producción:</strong> Definición de lineamientos para pruebas de fabricación y aseguramiento de calidad del producto final orientado al cliente.<br>
+                • <strong>Gestión TI:</strong> Administración integral del área de TI junto al equipo de software, garantizando continuidad operativa y seguridad.<br>
+                • <strong>Apoyo Multistack:</strong> Soporte experto en diseño de firmware para nuevos hardware y arquitectura de sistemas complejos bajo tierra.
             </div>
         </div>
         
@@ -313,20 +315,20 @@ class CVGeneratorHTML:
         
         <div class="project">
             <div class="project-title">Sistema IoT Industrial - Minería Subterránea</div>
-            <div class="project-tech">STM32 • FreeRTOS • Python • LoRa • React</div>
-            <div class="project-description">Sistema de diagnóstico remoto para red RF en minería. <strong>Impacto:</strong> Reducción de costos operacionales eliminando revisiones locales de cada amplificador</div>
+            <div class="project-tech">STM32 • FreeRTOS • Python • LoRa • React • MongoDB • MQTT</div>
+            <div class="project-description"><strong>Impacto:</strong> Plataforma de diagnóstico remoto eliminó visitas en sitio, reduciendo costos operacionales significativamente</div>
         </div>
         
         <div class="project">
-            <div class="project-title">Dispositivo Anti-Robo Inteligente</div>
-            <div class="project-tech">Hardware Design • GNSS/GSM • Embedded Systems</div>
-            <div class="project-description">Diseño completo desde concepto hasta producción. Producto comercial en uso por empresas de logística</div>
+            <div class="project-title">Dispositivo Anti-Robo RF Inhibidor</div>
+            <div class="project-tech">STM32 • GNSS/GSM • SpringBoot • Java • CANBus</div>
+            <div class="project-description"><strong>Logro:</strong> Dispositivo grado producción desde R&D hasta despliegue en mercado logístico</div>
         </div>
         
         <div class="project">
-            <div class="project-title">Red de Sensores Sísmicos</div>
-            <div class="project-tech">Sensor Networks • Signal Processing • IoT</div>
-            <div class="project-description">Sistema distribuido para detección temprana. 80 nodos con comunicación inalámbrica y procesamiento tiempo real</div>
+            <div class="project-title">Instrumentación & Automatización RF</div>
+            <div class="project-tech">Python • Procesamiento de Señales • Integración Equipos Lab</div>
+            <div class="project-description"><strong>Resultado:</strong> Automatización de bancos de prueba RF, reduciendo tiempo de testing en 80%</div>
         </div>
     </div>
 
@@ -348,7 +350,12 @@ class CVGeneratorHTML:
             <h2>Idiomas & Logros Profesionales</h2>
             <div style="margin-bottom: 8px;">
                 <p><strong>Español:</strong> Nativo</p>
-                <p><strong>Inglés:</strong> B2 Upper Intermediate (técnico fluido)</p>
+                <p><strong>Inglés:</strong> B1-B2 Intermedio (fluidez técnica)</p>
+                <ul style="font-size: 9px; margin-top: 3px; margin-bottom: 0;">
+                    <li>Lectura avanzada de documentación técnica</li>
+                    <li>Comunicación funcional para reuniones técnicas</li>
+                    <li>Objetivo: alcanzar nivel C1</li>
+                </ul>
             </div>
             <div>
                 <ul class="achievements" style="columns: 1; column-gap: 0;">

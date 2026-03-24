@@ -180,7 +180,7 @@
         /* Grid de 2 columnas para secciones compactas */
         .two-column {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1.4fr;
             gap: 12px;
         }
         
@@ -210,7 +210,7 @@
     <!-- PERFIL PROFESIONAL -->
     <div class="section">
         <h2>Perfil Profesional</h2>
-        <p>Ingeniero Civil Electrónico con <strong>9+ años de experiencia</strong> desarrollando soluciones tecnológicas end-to-end, desde hardware embebido hasta aplicaciones empresariales. Especialista en <strong>sistemas IoT críticos</strong> y <strong>firmware para microcontroladores STM32</strong>, con experiencia comprobada en entornos industriales extremos.</p>
+        <p>Ingeniero Civil Electrónico con <strong>9+ años de experiencia</strong> desarrollando soluciones tecnológicas end-to-end, desde hardware embebido hasta aplicaciones empresariales. Especialista en <strong>sistemas de comunicaciones RF</strong> y <strong>firmware para microcontroladores STM32</strong>, con enfoque en diagnóstico remoto para minería subterránea.</p>
     </div>
 
     <!-- COMPETENCIAS TÉCNICAS (Grid de 3 columnas) -->
@@ -220,9 +220,9 @@
             <div class="skill-category">
                 <h4>Programación</h4>
                 <ul>
-                    <li><strong>C/C++</strong> (Expert)</li>
-                    <li><strong>Python</strong> (Advanced)</li>
-                    <li>Java (Intermedio)</li>
+                    <li><strong>C/C++</strong></li>
+                    <li><strong>Python</strong></li>
+                    <li>Java</li>
                 </ul>
             </div>
             <div class="skill-category">
@@ -241,6 +241,8 @@
                     <li>Google Cloud, Docker</li>
                     <li>Linux, Git</li>
                     <li>SpringBoot, Flutter</li>
+                    <li><strong>Prompt Engineering</strong></li>
+                    <li><strong>Análisis de problemas complejos</strong></li>
                 </ul>
             </div>
         </div>
@@ -251,13 +253,15 @@
         <h2>Experiencia Profesional</h2>
         
         <div class="job">
-            <div class="job-title">UQOMM SpA - Encargado de Software y Firmware</div>
-            <div class="job-details">Septiembre 2021 - Presente (3+ años) | Con Con, Chile</div>
+            <div class="job-title">UQOMM SpA - Líder Técnico de Desarrollo | Arquitecto de Software & Firmware</div>
+            <div class="job-details">Septiembre 2021 - Presente (4+ años) | Con Con, Chile</div>
             <div class="job-achievements">
-                • <strong>Sistema IoT crítico:</strong> Arquitectura completa para monitoreo de amplificadores en minería subterránea<br>
-                • <strong>Firmware STM32:</strong> Programación C/C++ con FreeRTOS y optimización de periféricos<br>
-                • <strong>Stack tecnológico:</strong> Python + React + MongoDB + MQTT (500K+ datos/día, 99.9% disponibilidad)<br>
-                • <strong>Administración:</strong> Servidores Google Cloud, Linux y sistemas Odoo
+                • <strong>Sistema de diagnóstico remoto:</strong> Desarrollo de arquitectura de monitoreo y diagnóstico para redes de comunicaciones RF en minería subterránea<br>
+                • <strong>Firmware STM32:</strong> Programación C/C++ y optimización de periféricos<br>
+                • <strong>Stack tecnológico:</strong> Python + React + MongoDB + MQTT para sistema de telemetría y diagnóstico<br>
+                • <strong>Análisis de problemas:</strong> Diagnóstico y resolución de fallas complejas en sistemas embebidos y redes RF de difícil acceso<br>
+                • <strong>Prompt Engineering:</strong> 2+ años aplicando IA generativa para planificación de desarrollos, documentación técnica y diseño de soluciones<br>
+                • <strong>Liderazgo técnico:</strong> Planificación y gestión de arquitectura de sistemas, liderazgo de equipo desarrollo SW/FW
             </div>
         </div>
         
@@ -266,6 +270,7 @@
             <div class="job-details">Julio 2017 - Agosto 2021 (4+ años) | Santiago, Chile</div>
             <div class="job-achievements">
                 • <strong>Dispositivo anti-robo:</strong> Diseño completo hardware/software con inhibidor GNSS/GSM<br>
+                • <strong>Firmware con FreeRTOS:</strong> Desarrollo en C/C++ para sistema de tiempo real<br>
                 • <strong>Backend Java:</strong> Nuevas funcionalidades en SpringBoot para procesamiento GPS y CANBus<br>
                 • <strong>App Flutter:</strong> Mejoras en aplicación móvil con comunicación Bluetooth<br>
                 • <strong>Soporte técnico:</strong> Configuración dispositivos Teltonika, DCT Syrus, ERM Starlink
@@ -280,7 +285,7 @@
         <div class="project">
             <div class="project-title">Sistema IoT Industrial - Minería Subterránea</div>
             <div class="project-tech">STM32 • FreeRTOS • Python • LoRa • React</div>
-            <div class="project-description">Arquitectura end-to-end para monitoreo crítico. <strong>Impacto:</strong> 500K+ datos/día, 99.9% disponibilidad</div>
+            <div class="project-description">Sistema de diagnóstico remoto para red RF en minería. <strong>Impacto:</strong> Reducción de costos operacionales eliminando revisiones locales de cada amplificador</div>
         </div>
         
         <div class="project">
@@ -296,7 +301,7 @@
         </div>
     </div>
 
-    <!-- EDUCACIÓN Y LOGROS (2 columnas) -->
+    <!-- EDUCACIÓN Y IDIOMAS/LOGROS (2 columnas con más espacio para idiomas/logros) -->
     <div class="two-column">
         <div class="section">
             <h2>Educación</h2>
@@ -311,14 +316,19 @@
         </div>
         
         <div class="section">
-            <h2>Idiomas & Logros</h2>
-            <p><strong>Español:</strong> Nativo | <strong>Inglés:</strong> B2 Upper Intermediate</p>
-            <ul class="achievements">
-                <li>Ganador I+D Aplicada - Fundación Copec UC (2015)</li>
-                <li>Sistemas Críticos - 3+ años sin fallas en minería</li>
-                <li>Innovación Tecnológica - 5+ productos hasta producción</li>
-                <li>Liderazgo Técnico - Gestión proyectos multidisciplinarios</li>
-            </ul>
+            <h2>Idiomas & Logros Profesionales</h2>
+            <div style="margin-bottom: 8px;">
+                <p><strong>Español:</strong> Nativo</p>
+                <p><strong>Inglés:</strong> B2 Upper Intermediate (técnico fluido)</p>
+            </div>
+            <div>
+                <ul class="achievements" style="columns: 1; column-gap: 0;">
+                    <li style="margin-bottom: 3px;">Ganador I+D Aplicada - Fundación Copec UC (2015)</li>
+                    <li style="margin-bottom: 3px;">Desarrollo de 5+ firmwares especializados: headend, LoRa master-remoto, telemetría, sistema tags y leak feeder</li>
+                    <li style="margin-bottom: 3px;">Innovación Tecnológica - 5+ productos llevados hasta producción comercial</li>
+                    <li style="margin-bottom: 3px;">Liderazgo Técnico - Gestión exitosa de proyectos multidisciplinarios</li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
