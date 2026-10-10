@@ -37,26 +37,45 @@
 
 ## 💼 EXPERIENCIA PROFESIONAL DETALLADA
 
-### UQOMM SpA (Septiembre 2021 - Actual) - 3 años y 10 meses
-**Cargo**: Encargado de Software y Firmware
-**Industria**: Soluciones de comunicaciones para minería subterránea
+### UQOMM SpA (Agosto 2021 - Actual) - ~5 años
+**Cargo**: Encargado de Software y Firmware / Tech Lead I+D
+**Industria**: Soluciones de comunicaciones y telemetría para minería subterránea
 **Empresa**: www.uqomm.com | Con Con, Chile
 
-#### Responsabilidades Principales:
+#### Logros y Responsabilidades Principales:
 
-**Encargado de Software:**
-- Planificación, gestión, diseño y desarrollo de proyectos de software
-- Sistema de monitoreo de amplificadores en Python, integrando hardware serial, React y MongoDB
-- Control de instrumentos de RF en Python (analizador de espectros, generadores de señales) y mediciones precisas
-- Diseño e implementación de aplicación desde cero: captura de datos de dispositivos seriales hasta visualización en tiempo real a través de frontend React, utilizando Python, MQTT y MongoDB
+**Firmware de Misión Crítica (C/C++ Bare-Metal y FreeRTOS):**
+- Arquitectura y desarrollo de firmware para nodos de comunicación minera (`fw-vlad`, `fw-gateway2lora`, `fw-netreference`).
+- Implementación de control automático de ganancia (AGC) en lazo cerrado con DAC dedicado (tolerancia estricta de 26,5 dB), eliminando calibración manual de hardware.
+- Drivers de bajo nivel para transceptores Semtech SX127x (VHF/LoRa), temporizadores de precisión a nivel microsegundo y pilas Modbus RTU no bloqueantes en microcontroladores STM32 Cortex-M0/M4.
+- Mecanismos de tolerancia a fallos: watchdog de hardware (IWDG) y reversión automática de frecuencias en 30 s con paquetes ACK simétricos (`tg-protocol`).
 
-**Desarrollador de Firmware:**
-- Planificación, gestión, diseño y desarrollo de proyectos firmware en C y C++ para microcontroladores STM32 Cortex M0
-- Gestión de periféricos, manejo de interrupciones y optimización de código
+**Automatización de Bancos de Prueba y QA de Hardware:**
+- Arquitectura de `sw-testbench-orchestrator`: automatización en Python de instrumentos de RF (analizadores de espectro, generadores de señales) para ejecutar calibraciones multipunto y barridos de ganancia desatendidos (redujo pruebas de laboratorio de horas a minutos).
+- Migración de CI en la nube a suites de verificación local determinísticas (`tools/verificar.sh`) y hooks pre-push para garantizar cero regresiones antes del despliegue en mina.
 
-**Administrador de Sistemas:**
-- Configuración, mantenimiento y monitoreo de servidores Google Cloud, Odoo y Linux
-- Gestión de usuarios, permisos, respaldos y actualizaciones
+**Telemetría y AIOps:**
+- Servidor MCP personalizado (`jira-mcp`) para análisis algorítmico de grafos de ruta crítica (CPM) sobre dependencias de proyectos con LLMs.
+- Plataforma web de telemetría minera (`sw-diagnosticoremoto`) con trazabilidad de equipos por número de serie QR y control de red en faena.
+
+---
+
+### Lumina (2025 - Actual) — Iniciativa Propia / Deep Tech e I+D Cuantitativo
+**Rol**: Fundador y Arquitecto de Sistemas
+Iniciativa tecnológica propia orientada al desarrollo de sistemas algorítmicos de alta frecuencia, teoría cuantitativa de decisiones bajo incertidumbre y gobernanza de desarrollo con IA.
+
+#### monteCarlo — Microestructura de Mercado y Trading Algorítmico
+- Motor cuantitativo de alta frecuencia en C++20 y Python.
+- Streaming continuo en WebSocket ingiriendo 50 niveles de libro de órdenes (Order Book), trades y liquidaciones (Bybit WS) con latencia sub-segundo, persistiendo >1,6 GB de estado en SQLite (modo WAL).
+- Marco de validación estadística de 8 portones sobre 690+ días de datos históricos para mitigar sobreajuste, dimensionamiento fraccional de Kelly y pipeline MLOps con algoritmos genéticos.
+
+#### desicion-maker — Motor Cuantitativo de Toma de Decisiones Bajo Incertidumbre
+- Motor matemático de soporte a decisiones técnicas complejas que integra simulaciones de Monte Carlo con control estricto de convergencia, cálculo de Valor de la Información (VoI) y análisis multicriterio (TOPSIS con soporte de valores negativos y veto previo).
+- Validado formalmente contra literatura y tests de propiedades (`pymcdm`) para evaluar arquitecturas críticas de hardware y fuentes de poder tolerantes a fallos.
+
+#### dev-agents — Gobernanza de Ingeniería y Flujos de IA
+- Marco maestro de gobernanza para agentes de código (Claude Code, Cursor, Antigravity).
+- Estandariza reglas MISRA-C, invariantes de memoria para C++20, arquitectura por capas y suites de validación local antes de push, evitando regresiones en bases de código embebido.
 
 ### BlackGPS (Julio 2017 - Agosto 2021) - 4 años y 2 meses
 **Cargo**: Ingeniero de Hardware

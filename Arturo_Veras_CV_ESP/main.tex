@@ -41,23 +41,18 @@
 \maketitle
 
 \section{Perfil}
-Ingeniero Civil Electrónico con más de 9 años de experiencia demostrada en el ciclo completo de desarrollo de productos tecnológicos. Mi expertise abarca desde el diseño de hardware y firmware embebido (C/C++, STM32) hasta el desarrollo de software full-stack (Python, React, MongoDB) y la administración de sistemas (Linux, Google Cloud). He liderado y contribuido a proyectos de I+D en entornos exigentes como las comunicaciones para minería y la seguridad vehicular, enfocándome en crear soluciones robustas y eficientes.
+Ingeniero Civil Electrónico (Mención Computadores, UTFSM) con más de 10 años de experiencia demostrada en el ciclo completo de desarrollo de productos tecnológicos y sistemas críticos. Especializado en la convergencia de hardware/firmware embebido de alta confiabilidad (C/C++, STM32, LoRa, RF), ingeniería de software distribuido (Python, React, Linux) y arquitectura de sistemas algorítmicos asistidos por IA. Liderazgo de equipos de I+D en telecomunicaciones para minería subterránea y seguridad vehicular, enfocado en eliminar fallas de campo y automatizar validaciones de laboratorio.
 
 \section{Experiencia}
 \subsection{Empresas}
-\cventry{Septiembre 2021 - Actual (3 años y 4 meses)}{Encargado de Software y Desarrollador Firmware}{UQOMM \url{www.uqomm.com}}{Con Con}{Chile}{
-Uqomm provee soluciones de comunicaciones para minería subterránea. Como parte del equipo de I+D, sus logros y responsabilidades incluyen:
+\cventry{Agosto 2021 - Actual (~5 años)}{Encargado de Software y Firmware / Tech Lead I+D}{UQOMM \url{www.uqomm.com}}{Con Con}{Chile}{
+Liderazgo del área de software y firmware de I+D (equipo de 3 ingenieros) para equipamiento de telecomunicaciones y telemetría de misión crítica en minería subterránea.
 \\
 \begin{itemize}
- \item \textbf{Encargado de Software:} Planificación, gestión, diseño y desarrollo de proyectos de software para:
- \begin{itemize}
-     \item Sistema de monitoreo de amplificadores en Python, integrando hardware serial, React y MongoDB.
-     \item Controlar instrumentos de RF en Python (analizador de espectros, generadores de señales) y realizar mediciones precisas.
-     \item Diseño e implementación de una aplicación desde cero, desde la captura de datos de dispositivos seriales hasta la visualización en tiempo real a través de un frontend React, utilizando tecnologías como Python, MQTT y MongoDB.
- \end{itemize}
- \item \textbf{Desarrollador de Firmware}: Planificación, gestión, diseño y desarrollo de proyectos firmware en C y C++ para microcontroladores STM32 Cortex M0, incluyendo la gestión de periféricos, el manejo de interrupciones y la optimización de código.
- \item \textbf{Administrador de Sistemas}: Responsable de la configuración, mantenimiento y monitoreo de servidores Google Cloud, Odoo y Linux, incluyendo la gestión de usuarios, permisos, respaldos y actualizaciones.
- \end{itemize}
+ \item \textbf{Firmware de Misión Crítica (C/C++ Bare-Metal y FreeRTOS):} Arquitectura y desarrollo de firmware para nodos de comunicación minera (\textit{fw-vlad}, \textit{fw-gateway2lora}, \textit{fw-netreference}). Implementación de control automático de ganancia (AGC) en lazo cerrado con DAC dedicado (tolerancia estricta de 26,5~dB), drivers de bajo nivel Semtech SX127x (VHF/LoRa), temporizadores de precisión a nivel microsegundo y pilas Modbus RTU no bloqueantes en microcontroladores STM32 Cortex-M0/M4 con watchdog de hardware (IWDG) y mecanismos de reversión automática de frecuencias en 30~s.
+ \item \textbf{Automatización de Bancos de Prueba y QA de Hardware (Python):} Arquitectura de \textit{sw-testbench-orchestrator}, automatizando el control de instrumentos de RF (analizadores de espectro, generadores de señales) para ejecutar calibraciones multipunto desatendidas y barridos de ganancia; redujo el tiempo de pruebas de laboratorio de horas a minutos. Reemplazo de CI en la nube por suites de verificación local determinísticas y hooks pre-push sin falsos positivos.
+ \item \textbf{Telemetría y AIOps (Python, MCP, React):} Servidor MCP personalizado (\textit{jira-mcp}) para análisis algorítmico de grafos de ruta crítica (CPM) sobre dependencias de ingeniería con LLMs. Desarrollo de plataforma web de telemetría minera (\textit{sw-diagnosticoremoto}) con trazabilidad de equipos por serial QR y telemando de red en faena.
+\end{itemize}
 }
 \cventry{Julio 2017 - Agosto 2021 (4 años y 2 meses)}{Ingeniero de Hardware}{BlackGPS \url{www.blackgps.com}}{Santiago}{Chile}{
 En BlackGPS, empresa dedicada a soluciones de seguridad y gestión de flotas, sus responsabilidades abarcaron:
@@ -69,7 +64,22 @@ En BlackGPS, empresa dedicada a soluciones de seguridad y gestión de flotas, su
 \item \textbf{Desarrollador Flutter:} Mejora de aplicación móvil, incluyendo comunicación Bluetooth para control de vehículos.
 \end{itemize}
 }
-\subsection{Proyectos}
+\section{Lumina — Iniciativa Propia / Deep Tech e I+D Independiente (2025 - Actual)}
+Fundador y Arquitecto de Sistemas de Lumina, iniciativa tecnológica propia orientada al desarrollo de sistemas algorítmicos de alta frecuencia, teoría cuantitativa de decisiones bajo incertidumbre y gobernanza de desarrollo con IA.
+\\
+\cventry{2025 - Actual}{Microestructura de Mercado y Trading Algorítmico}{monteCarlo}{}{}{
+Motor cuantitativo de alta frecuencia y microestructura en C++20 y Python. Streaming continuo sobre WebSocket ingiriendo 50 niveles de libro de órdenes (Order Book), trades y liquidaciones con latencia sub-segundo, persistiendo más de 1,6~GB de estado en SQLite (modo WAL). Marco de validación estadística de 8 portones sobre 690+ días de datos históricos para mitigar sobreajuste, dimensionamiento de posición fraccional de Kelly y pipeline de MLOps con algoritmos genéticos.
+}
+
+\cventry{2025 - Actual}{Motor de Toma de Decisiones Bajo Incertidumbre}{desicion-maker}{}{}{
+Motor matemático de soporte a decisiones técnicas complejas que integra simulaciones de Monte Carlo con control estricto de convergencia, cálculo de Valor de la Información (VoI) y análisis multicriterio (TOPSIS con soporte de valores negativos y veto previo). Validado contra literatura y tests de propiedades (\textit{pymcdm}) para evaluar arquitecturas críticas de hardware y fuentes de poder tolerantes a fallos.
+}
+
+\cventry{2025 - Actual}{Gobernanza de Ingeniería y Flujos de IA}{dev-agents}{}{}{
+Marco maestro de directrices y gobernanza para agentes de código (Claude Code, Cursor, Antigravity). Estandariza reglas MISRA-C, invariantes de memoria para C++20, arquitectura por capas y suites de validación local antes de push, evitando regresiones en bases de código embebido.
+}
+
+\subsection{Proyectos Históricos}
 \cventry{Enero 2017 - Noviembre 2017 (11 meses)}{Ingeniero Electrónico}{Prosismic SpA}{Viña del Mar}{Chile}{
 \begin{itemize}
 \item Desarrollo de prototipo funcional para red de 80 sensores de detección temprana de sismos.

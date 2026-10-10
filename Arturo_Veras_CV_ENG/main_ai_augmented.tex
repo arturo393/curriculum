@@ -39,13 +39,13 @@ Deep Tech Systems Architect and C++ Senior Engineer with nearly two decades of e
 
 \section{Experience}
 \subsection{Professional Position}
-\cventry{2 years 11 months / Agosto 2021 - Present}{AI-Augmented Staff Engineer \& I+D Tech Lead}{Uqomm 
+\cventry{August 2021 - Present (~5 years)}{AI-Augmented Staff Engineer \& I+D Tech Lead}{Uqomm 
  (\url{www.uqomm.com})}{Con Con, Chile}{}{
-Head of the Software R\&D department, leading a team of 3 engineers. Responsible for the architectural design and deployment of highly resilient embedded systems and distributed networks.
+Head of the Software and Firmware R\&D department, leading a team of 3 engineers. Responsible for the architectural design, firmware implementation, and deployment of mission-critical communication equipment and telemetry for underground mining.
 \begin{itemize}
-    \item \textbf{Firmware (C/Rust):} Lead developer of \textit{fw-diagnostico-remoto-vlad} and \textit{sigmavpn}, managing LoRa frequencies, FSK TX modules, UART routing, and granular bitmask logging for memory-constrained Cortex-M0 devices.
-    \item \textbf{AI Orchestration (Python/JS):} Engineered custom AI-Agent protocols (\textit{dev-agents}) enforcing C++20 standards and MISRA-C rules. Developed \textit{uqomm-googlesheet-mcp-server} to link AI agents with internal processes.
-    \item \textbf{AIOps \& QA Automation:} Architected \textit{sw-testbench-orchestrator} (Test-Driven Development), pushing automated hardware validations and multiplying team delivery velocity by 10x through advanced Prompt Engineering and automated QA pipelines.
+    \item \textbf{Mission-Critical Embedded Systems (C/C++ Bare-Metal \& FreeRTOS):} Lead firmware architect for underground communication nodes (\textit{fw-vlad}, \textit{fw-gateway2lora}, \textit{fw-netreference}). Implemented hardware Automatic Gain Control (AGC) with dedicated DAC calibration on VLAD25 (tight 26.5 dB gain target), Semtech SX127x (VHF/LoRa) low-level drivers, microsecond-precision timers, and non-blocking Modbus RTU stacks for Cortex-M0/M4 microcontrollers with independent hardware watchdogs (IWDG) and 30-second frequency rollback failovers.
+    \item \textbf{Automated Testbenches \& Hardware QA (Python/TDD):} Architected \textit{sw-testbench-orchestrator}, automating RF test instruments (spectrum analyzers, signal generators) to perform unassisted multi-point calibration, sweeping gain and validating hardware RF envelopes; reduced manual lab testing from hours to minutes. Replaced slow cloud CI with deterministic local suites (\textit{tools/verificar.sh}) and pre-push hooks across all firmware repositories.
+    \item \textbf{AIOps, Critical Path \& Telemetry (Python/MCP/React):} Engineered custom MCP servers (\textit{jira-mcp}) performing Critical Path Method (CPM) graph analysis on engineering roadmaps via LLMs. Developed full-stack underground telemetry dashboards (\textit{sw-diagnosticoremoto}) with QR-serial device tracing and live equipment remote control.
 \end{itemize}
 }
 
@@ -60,29 +60,20 @@ As a BackEnd Developer, I developed new features on the server, processing infor
 In my capacity as a Flutter developer, I implemented new functionalities in the mobile app using Flutter, established Bluetooth communication with the tracking device, and improved the user interface.
 }
 
-\section{Key Open Source \& Deep Tech Projects}
-\cventry{2025 - Present}{Advanced Algorithmic Research}{monteCarlo}{}{}{
-Developed a high-performance simulation engine implementing Monte Carlo Tree Search (MCTS), Markov Chain Monte Carlo (MCMC), and Particle Swarm Optimization (PSO). Integrated an MCP Server to fully automate GitHub issue tracking via LLMs, showcasing cutting-edge Machine Learning Engineering.
+\section{Lumina — Proprietary Deep Tech R\&D \& Quantitative Systems}
+Founder and Systems Architect of Lumina, an independent deep-tech initiative focusing on algorithmic execution, decision theory under uncertainty, and high-reliability AI engineering governance.
+\\
+\cventry{2025 - Present}{Market Microstructure \& Algorithmic Systems}{monteCarlo}{}{}{
+Architected a real-time quantitative trading and microstructure research engine in C++20 and Python. Implemented asynchronous WebSockets ingesting 50-level Order Book snapshots, trade flows, and liquidation events with sub-second latency, persisting over 1.6~GB of live market state in SQLite WAL mode. Designed an 8-gate statistical validation framework spanning 690+ days of historical data to eliminate backtest overfitting, coupled with fractional Kelly position sizing and automated walk-forward MLOps pipelines.
 }
 
-\cventry{2025 - Present}{AI Governance Framework}{dev-agents}{}{}{
-Created a master "Constitution" repository serving as the brain for AI agents (Copilot/Cursor). It enforces strict YAML frontmatter rules, layer architecture, and memory safety directives for C++ firmware, turning junior-level AI outputs into Staff-level enterprise code.
+\cventry{2025 - Present}{Quantitative Decision Engine Under Uncertainty}{desicion-maker}{}{}{
+Developed a mathematical decision-support engine integrating Monte Carlo simulations with strict convergence criteria, Value of Information (VoI) calculations, and Multi-Criteria Decision Analysis (TOPSIS supporting negative values and pre-ranking vetoes). Formally validated against academic literature and property-based test suites (\textit{pymcdm}) to evaluate fault-tolerant computing and power-supply hardware architectures.
 }
 
-\cventry{7 month / January 2016 - July 2016}{Technical Director}{EPS Project}{Viña del Mar, Chile}{}{The project aimed to build a hydrogen generator using three innovative technologies: pulsed electrolysis, photolysis with UV rays, and sonolysis with high-frequency electric piezoelectric transducers. My responsibilities included coordinating, planning, executing, and supervising teams in the areas of Electronics, Chemistry, Design, and Sales for an R\&D project funded by CORFO's Innova department. As an Electronics developer, I programmed a microcontroller to generate a variable pulse train in frequency and duty cycle necessary to excite the electrolyzer, and conducted efficiency tests on a power generator.}
-
-\cventry{6 month / July 2015 - December 2016}{Electronic Engineer}{HH Motors Project}{Valparaíso, Chile}{}{Focused on researching, energy efficiency testing, analysis, and validation of an alkaline electrolyzer. Designed and implemented a circuit to modify the electronic fuel injection system of a vehicle, conducting fuel performance tests.}
-
-\cventry{2 month / January 2014 - Febraury 2014}{Research Intern}{Scientific Technological Center Valparaíso}{Valparaíso, Chile}{}{Responsible for researching and developing a device that would allow a GPU to be connected to a PC via a common interface such as USB or Ethernet, enabling the execution of Parallel Computing applications. During my research, I evaluated different alternatives and presented a detailed report covering information about various devices, their features, advantages, disadvantages, and prices. More details about my project can be found here: \url{https://github.com/mavillan/proyectoRpi}.}
-
-\cventry{2 month / December 2012 - January 2013}{Intern Programmer}{Laboratory of Instrumentation and Photonics}{Santiago , Chile}{}{Programmed a Xilinx Virtex-5 XC5VLX110T-1FF1136 FPGA using LabVIEW and Python modules. I was responsible for installing all the necessary modules for the FPGA to function properly, involving error detection and correction, meeting dependencies, and fixing the code.}
-
-\cventry{2 month / January 2009 - February 2010}{Research Intern}{Federico Santa María Technical University}{Valparaíso, Chile}{}{Tasked with researching the latest microcontrollers and development boards on the market to choose the next development kit for the electronics department's laboratory course. Also responsible for maintaining a website displaying all the job offers from the electronics department, updating the information based on received emails.}
-
-\subsection{Other Jobs}
-\cventry{January 2015 - March 2015}{Administrative Assistant}{Bottai SA.}{Arica, Chile}{}{Conducted tests for quality control of different types of concrete.}
-
-\cventry{October 2013 - November 2013}{Salesperson}{Entel}{Valparaíso, Chile}{}{Directly door-to-door selling Entel products for households, including internet, satellite television, and telephony.}
+\cventry{2025 - Present}{Enterprise AI Governance Framework}{dev-agents}{}{}{
+Architected a master governance and constitution framework for AI coding agents (Claude Code, Cursor, Copilot, Antigravity). Enforces MISRA-C rules, C++20 memory safety invariants, layer-boundary architectures, and local pre-push validation suites, eliminating AI regressions in production embedded codebases.
+}
 
 \section{Education}
 \cventry{2006--2014}{Electrical Engineer - Computers Major}{Federico Santa María Technical University}{Valparaíso, Chile}{}{}
