@@ -38,7 +38,8 @@
 ## 💼 EXPERIENCIA PROFESIONAL DETALLADA
 
 ### UQOMM SpA (Agosto 2021 - Actual) - ~5 años
-**Cargo**: Encargado de Software y Firmware / Tech Lead I+D
+**Cargo**: Jefe de Software y Firmware (I+D)
+**Contexto**: Jefatura técnica y funcional de las soluciones de software y firmware en I+D basada en trayectoria en la empresa y dominio integral de los sistemas de telecomunicaciones para minería subterránea.
 **Industria**: Soluciones de comunicaciones y telemetría para minería subterránea
 **Empresa**: www.uqomm.com | Con Con, Chile
 
